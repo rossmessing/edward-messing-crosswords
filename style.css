@@ -234,10 +234,35 @@ h1 {
 
 .game-controls {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 10px;
   width: 100%;
   max-width: 420px;
   margin-bottom: 8px;
+}
+
+.submit-btn {
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border: none;
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.submit-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.secondary-controls {
+  display: flex;
+  gap: 16px;
 }
 
 .control-btn {

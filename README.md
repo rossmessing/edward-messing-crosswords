@@ -65,3 +65,15 @@ Then open `http://localhost:8765/`.
 2. In the repo settings, under **Pages**, set the source to the `main`
    branch, root folder.
 3. The site will be live at `https://<username>.github.io/<repo>/`.
+
+## Caching
+
+GitHub Pages sets a 10-minute cache header on everything and doesn't
+allow that to be customized, so:
+
+- Puzzle JSON (`puzzles/**/*.json`, `manifest.json`) is fetched with
+  `cache: "no-store"` in `app.js`, so puzzle content updates always show
+  up immediately - no cache-busting needed there.
+- `app.js` and `style.css` are loaded with a `?v=N` query string in
+  `index.html`. Bump `N` any time you change either file, or returning
+  players may not see the update for up to 10 minutes.

@@ -16,6 +16,7 @@
     grid: document.getElementById("grid"),
     attemptDisplay: document.getElementById("attempt-display"),
     wheel: document.getElementById("wheel"),
+    btnSubmit: document.getElementById("btn-submit"),
     btnClear: document.getElementById("btn-clear"),
     btnShuffle: document.getElementById("btn-shuffle"),
     btnNext: document.getElementById("btn-next"),
@@ -62,16 +63,19 @@
 
   // ---------- data loading ----------
 
+  // no-store: puzzle content changes as the game is updated, and
+  // GitHub Pages' default caching otherwise leaves the browser (or an
+  // intermediate CDN cache) serving stale puzzle data for a while.
   async function loadManifests() {
     for (const difficulty of DIFFICULTIES) {
-      const res = await fetch(`puzzles/${difficulty}/manifest.json`);
+      const res = await fetch(`puzzles/${difficulty}/manifest.json`, { cache: "no-store" });
       manifests[difficulty] = await res.json();
     }
   }
 
   async function loadPuzzle(difficulty, index) {
     const id = manifests[difficulty][index];
-    const res = await fetch(`puzzles/${difficulty}/${id}.json`);
+    const res = await fetch(`puzzles/${difficulty}/${id}.json`, { cache: "no-store" });
     return res.json();
   }
 
@@ -156,7 +160,7 @@
     const vh = window.innerHeight;
 
     const topClearance = 64; // back button
-    const bottomControls = 110; // controls row + gaps
+    const bottomControls = 180; // submit button + secondary controls row + gaps
     const attemptHeight = 44;
     const innerGaps = 32; // gaps between grid/attempt/wheel
     const safetyMargin = 30;
@@ -237,40 +241,52 @@
     state.attempt.push({ index, letter: state.letters[index] });
     renderWheel();
     renderAttempt();
-    checkAttempt();
   }
 
-  function checkAttempt() {
+  // Checking only happens on an explicit Submit tap, not on every tile
+  // tap. Auto-checking after each letter meant a word that's a prefix
+  // of a longer one (e.g. "soup" inside "soupy") would lock in and
+  // clear the wheel the instant it matched, cutting the player off
+  // before they could finish spelling the longer word.
+  function submitAttempt() {
+    if (state.attempt.length === 0) return;
     const word = state.attempt.map((t) => t.letter).join("");
-    if (state.foundWords.has(word)) return;
 
-    const match = state.puzzle.words.find((w) => w.word === word);
-    if (match) {
-      state.foundWords.add(word);
-      for (let i = 0; i < match.word.length; i++) {
-        const r = match.dir === "down" ? match.row + i : match.row;
-        const c = match.dir === "down" ? match.col : match.col + i;
-        state.cells[r][c].revealed = true;
-      }
-      clearAttempt();
-      renderGrid();
+    if (!state.foundWords.has(word)) {
+      const match = state.puzzle.words.find((w) => w.word === word);
+      if (match) {
+        state.foundWords.add(word);
+        for (let i = 0; i < match.word.length; i++) {
+          const r = match.dir === "down" ? match.row + i : match.row;
+          const c = match.dir === "down" ? match.col : match.col + i;
+          state.cells[r][c].revealed = true;
+        }
+        renderGrid();
+        clearAttempt();
 
-      if (state.foundWords.size === state.puzzle.words.length) {
-        setTimeout(showComplete, 300);
+        if (state.foundWords.size === state.puzzle.words.length) {
+          setTimeout(showComplete, 300);
+        }
+        return;
       }
-      return;
     }
 
     // Not a grid word - check whether it's a valid "bonus" word instead.
     // Bonus words are real words formable from the wheel that just
     // aren't part of the visible grid; finding one only bumps a small
     // counter, it never affects puzzle completion.
-    const bonusWords = state.puzzle.bonus_words || [];
-    if (!state.foundBonusWords.has(word) && bonusWords.includes(word)) {
-      state.foundBonusWords.add(word);
-      clearAttempt();
-      renderBonusCounter();
+    if (!state.foundBonusWords.has(word)) {
+      const bonusWords = state.puzzle.bonus_words || [];
+      if (bonusWords.includes(word)) {
+        state.foundBonusWords.add(word);
+        renderBonusCounter();
+        clearAttempt();
+        return;
+      }
     }
+
+    // Not recognized, or already found - clear so they can try again.
+    clearAttempt();
   }
 
   function renderBonusCounter() {
@@ -313,6 +329,7 @@
   el.btnEasy.addEventListener("click", () => startPuzzle("easy"));
   el.btnMedium.addEventListener("click", () => startPuzzle("medium"));
   el.btnBack.addEventListener("click", showHome);
+  el.btnSubmit.addEventListener("click", submitAttempt);
   el.btnClear.addEventListener("click", clearAttempt);
   el.btnShuffle.addEventListener("click", shuffleWheel);
   el.btnNext.addEventListener("click", nextPuzzle);
