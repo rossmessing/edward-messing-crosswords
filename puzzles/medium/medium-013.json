@@ -2,72 +2,148 @@
   "id": "medium-013",
   "difficulty": "medium",
   "letters": [
-    "a",
-    "g",
-    "w",
-    "y",
-    "a",
+    "t",
     "e",
-    "t"
+    "l",
+    "e",
+    "n",
+    "a",
+    "r",
+    "x"
   ],
   "grid": {
-    "width": 8,
-    "height": 10
+    "width": 13,
+    "height": 9
   },
   "words": [
     {
-      "word": "gateway",
-      "row": 6,
-      "col": 1,
+      "word": "external",
+      "row": 4,
+      "col": 3,
       "dir": "across"
     },
     {
-      "word": "away",
-      "row": 6,
-      "col": 2,
+      "word": "rental",
+      "row": 3,
+      "col": 3,
       "dir": "down"
     },
     {
-      "word": "age",
+      "word": "alert",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "enter",
       "row": 4,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "gay",
-      "row": 5,
       "col": 6,
       "dir": "down"
     },
     {
-      "word": "way",
-      "row": 8,
+      "word": "extra",
+      "row": 0,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "later",
+      "row": 0,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "learn",
+      "row": 4,
+      "col": 10,
+      "dir": "down"
+    },
+    {
+      "word": "earn",
+      "row": 5,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "lane",
+      "row": 6,
+      "col": 9,
+      "dir": "across"
+    },
+    {
+      "word": "late",
+      "row": 2,
+      "col": 0,
+      "dir": "down"
+    },
+    {
+      "word": "near",
+      "row": 7,
       "col": 1,
       "dir": "across"
     },
     {
-      "word": "tea",
-      "row": 4,
-      "col": 2,
-      "dir": "across"
-    },
-    {
-      "word": "get",
+      "word": "next",
       "row": 2,
-      "col": 2,
-      "dir": "down"
-    },
-    {
-      "word": "tag",
-      "row": 2,
-      "col": 0,
+      "col": 4,
       "dir": "across"
-    },
-    {
-      "word": "eat",
-      "row": 0,
-      "col": 0,
-      "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "ale",
+    "alt",
+    "alter",
+    "ant",
+    "ante",
+    "are",
+    "ate",
+    "axe",
+    "axle",
+    "ear",
+    "eat",
+    "eaten",
+    "eater",
+    "era",
+    "eta",
+    "eternal",
+    "exert",
+    "extern",
+    "lan",
+    "lat",
+    "latex",
+    "lax",
+    "lean",
+    "lear",
+    "learnt",
+    "lent",
+    "let",
+    "nat",
+    "neat",
+    "nee",
+    "net",
+    "ran",
+    "rant",
+    "rat",
+    "rate",
+    "reel",
+    "relate",
+    "relax",
+    "renal",
+    "rent",
+    "ret",
+    "tae",
+    "tale",
+    "tan",
+    "tar",
+    "tax",
+    "tea",
+    "teal",
+    "tear",
+    "tee",
+    "teen",
+    "tele",
+    "ten",
+    "tra",
+    "tree"
   ]
 }

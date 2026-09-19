@@ -3,64 +3,56 @@
   "difficulty": "easy",
   "letters": [
     "e",
-    "t",
-    "n",
-    "s",
     "e",
-    "a"
+    "n",
+    "t",
+    "r"
   ],
   "grid": {
-    "width": 9,
-    "height": 8
+    "width": 8,
+    "height": 7
   },
   "words": [
     {
-      "word": "senate",
-      "row": 4,
-      "col": 3,
+      "word": "enter",
+      "row": 3,
+      "col": 2,
       "dir": "across"
     },
     {
-      "word": "teens",
-      "row": 0,
-      "col": 3,
-      "dir": "down"
-    },
-    {
-      "word": "seen",
-      "row": 1,
-      "col": 5,
-      "dir": "down"
-    },
-    {
-      "word": "seat",
-      "row": 1,
-      "col": 7,
+      "word": "rent",
+      "row": 2,
+      "col": 2,
       "dir": "down"
     },
     {
       "word": "teen",
       "row": 3,
-      "col": 0,
-      "dir": "across"
-    },
-    {
-      "word": "east",
-      "row": 4,
       "col": 4,
       "dir": "down"
     },
     {
-      "word": "sent",
+      "word": "tree",
       "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "net",
+      "row": 5,
       "col": 0,
       "dir": "across"
     },
     {
       "word": "ten",
-      "row": 3,
-      "col": 0,
-      "dir": "down"
+      "row": 0,
+      "col": 5,
+      "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "nee",
+    "ret",
+    "tee"
   ]
 }

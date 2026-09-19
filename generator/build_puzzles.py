@@ -12,61 +12,153 @@ manifest.json per difficulty listing puzzle ids in play order.
 
 import json
 import random
+import urllib.request
 from collections import Counter
 from pathlib import Path
 
 HERE = Path(__file__).parent
 WORDLIST_RAW = HERE / "wordlist_raw.txt"
+WORDLIST_RAW_URL = (
+    "https://raw.githubusercontent.com/first20hours/google-10000-english/"
+    "master/google-10000-english-no-swears.txt"
+)
+BONUS_WORDLIST_RAW = HERE / "wordlist_bonus_raw.txt"
+BONUS_WORDLIST_RAW_URL = "https://norvig.com/ngrams/count_1w.txt"
 SYSTEM_DICT = Path("/usr/share/dict/web2")
+PROPER_NAMES = Path("/usr/share/dict/propernames")
 PUZZLES_DIR = HERE.parent / "puzzles"
 
 MIN_SUBWORD_LEN = 3
-# Only take the N most frequent words from the raw list. The full list
-# trails off into obscure/technical terms ("ide", "rfc"-style noise);
-# capping rank keeps everything recognizable to a casual player.
+# Only take the N most frequent words from the raw list. This list is
+# a small, pre-curated "no-swears" common-words list (not a raw web
+# corpus), so a low cutoff is deliberate: going much higher starts
+# admitting real but obscure/technical/archaic terms that a much
+# bigger corpus would otherwise catch on frequency alone but that
+# this list is too short to rank sensibly.
 FREQUENCY_RANK_CUTOFF = 4000
+# Cutoff for the bonus-word corpus (a much bigger real web-frequency
+# list). Bonus words are never drawn on screen, so a looser cutoff here
+# just means more of what a player types gets recognized, at the cost
+# of occasionally admitting an obscure or informal word as a silent,
+# unlisted "extra" - an acceptable trade since it's never shown.
+BONUS_FREQUENCY_RANK_CUTOFF = 25000
 
 DIFFICULTIES = {
     "easy": {
         "root_len": (5, 6),
         "min_placed": 5,
-        "target_placed": 8,
+        "grid_target": 9,
         "count": 15,
     },
     "medium": {
         "root_len": (7, 8),
         "min_placed": 7,
-        "target_placed": 11,
+        "grid_target": 12,
         "count": 15,
     },
 }
 
 RNG_SEED = 42
 
+# The frequency list is scraped from real web text, so it conflates
+# genuinely common words with lowercased proper nouns, and Webster's
+# unabridged (web2) admits plenty of archaic/dialectal/obscure entries
+# that happen to share a spelling with something common (e.g. "tate",
+# a real but obscure archaic word, vs. "Tate" the surname/gallery).
+# Neither filter alone can tell those apart, so anything caught by
+# manual review goes here: abbreviations, foreign/dialectal terms,
+# fragments that aren't used standalone, proper-noun collisions, and
+# anything too clinical/heavy-themed or crude for a casual word game.
+BLOCKLIST = {
+    "ana", "ani", "ara", "ait", "ast", "bam", "ber", "bis", "carr",
+    "cest", "che", "cho", "cit", "clit", "coco", "cor", "cos", "deg",
+    "desi", "dev", "dit", "dob", "dod", "ean", "fra", "ged", "git",
+    "het", "holt", "homo", "ide", "ing", "ist", "iso", "kat", "kip",
+    "lim", "lis", "luxe", "lys", "mao", "mel", "mor", "mot", "nea",
+    "neo", "non", "obi", "och", "oki", "ora", "poe", "poy", "psi",
+    "ras", "rea", "reb", "rel", "rex", "ria", "rio", "roc", "roi",
+    "sao", "sar", "seg", "ser", "seth", "shi", "sho", "sie", "sith",
+    "soc", "soho", "tai", "tate", "tera", "til", "ting", "tho",
+    "morocco", "incubus", "anorexia", "dyslexia", "weber", "bodied",
+    "reflux", "cortical", "dont", "las", "tue",
+}
 
-def load_wordlist():
-    """Intersect a common-word frequency list with a real dictionary.
+# The curated 4000-word list is clean but short, so it misses some very
+# ordinary short words a player would reasonably expect to work (e.g.
+# "gut"). These are added back in before filtering, so they still pass
+# through the same real-word/proper-name checks as everything else.
+ALLOWLIST_EXTRA = {
+    "gut", "hub", "hug", "hut", "jug", "mug", "rug", "tub", "tug",
+    "keg", "peg", "pod", "pop", "pot", "tap", "tan", "tax", "tin",
+    "tip", "tow", "nap", "nod", "oak", "owl", "pad", "pig", "pin",
+    "rib", "rim", "rod", "rot", "row", "rub", "sip", "sob", "tab",
+    "van", "vat", "wag", "wax", "wig", "win", "wit", "zip", "jab",
+    "jam", "jog", "lag", "lid", "mop",
+}
 
-    The frequency list alone contains web-scraped junk (abbreviations
-    like "ncaa"/"rfc", frequency-list noise like "ata") and proper
-    nouns (e.g. "iran", capitalized in the dictionary). Requiring an
-    exact case-sensitive lowercase match against the system dictionary
-    filters both out, since proper nouns only appear capitalized there.
+
+def _ensure_downloaded(path, url):
+    if path.exists():
+        return
+    print(f"downloading {path.name} ...")
+    urllib.request.urlretrieve(url, path)
+
+
+def _filter_real_words(words):
+    """Drop non-words and proper nouns from a raw candidate word set.
+
+    Real-word check: exact case-sensitive lowercase match against the
+    system dictionary (proper nouns only appear capitalized there).
+    Proper-noun check: web2 sometimes also carries an obscure lowercase
+    common-noun sense for what's overwhelmingly a place/given name
+    (e.g. "tivoli", "chester"), which the case check alone can't catch.
     """
-    words = set()
-    lines = WORDLIST_RAW.read_text().splitlines()[:FREQUENCY_RANK_CUTOFF]
-    for line in lines:
-        w = line.strip().lower()
-        if w.isalpha() and len(w) >= MIN_SUBWORD_LEN:
-            words.add(w)
-
     if SYSTEM_DICT.exists():
         dict_words = set(SYSTEM_DICT.read_text(errors="ignore").splitlines())
         words = {w for w in words if w in dict_words}
     else:
         print(f"warning: {SYSTEM_DICT} not found, skipping real-word filter")
 
+    if PROPER_NAMES.exists():
+        proper = {
+            line.strip().lower()
+            for line in PROPER_NAMES.read_text(errors="ignore").splitlines()
+        }
+        words -= proper
+
+    return words - BLOCKLIST
+
+
+def _load_frequency_list(path, cutoff):
+    words = set()
+    lines = path.read_text().splitlines()[:cutoff]
+    for line in lines:
+        w = line.split("\t")[0].strip().lower()
+        if w.isalpha() and len(w) >= MIN_SUBWORD_LEN:
+            words.add(w)
     return words
+
+
+def load_wordlist():
+    """The clean, curated word set used for root words and visible grid
+    words. Small and conservative on purpose - anything placed in the
+    grid is always on screen, so it needs to be unambiguously common.
+    """
+    words = _load_frequency_list(WORDLIST_RAW, FREQUENCY_RANK_CUTOFF)
+    words |= ALLOWLIST_EXTRA
+    return _filter_real_words(words)
+
+
+def load_bonus_wordlist(grid_words):
+    """A much larger word set used only to recognize "bonus" words -
+    valid words a player can type that aren't drawn into the grid. Since
+    these never render on screen, coverage matters more than the extra
+    obscure/informal words a bigger corpus lets through, but they still
+    go through the same real-word/proper-noun/blocklist filter.
+    """
+    words = _load_frequency_list(BONUS_WORDLIST_RAW, BONUS_FREQUENCY_RANK_CUTOFF)
+    words |= grid_words
+    return _filter_real_words(words)
 
 
 def is_subword(word, root_counter):
@@ -83,7 +175,7 @@ def find_subwords(root, all_words):
         w for w in all_words
         if w != root and len(w) <= len(root) and is_subword(w, root_counter)
     ]
-    matches.sort(key=len, reverse=True)
+    matches.sort(key=lambda w: (-len(w), w))
     return matches
 
 
@@ -148,13 +240,17 @@ class Grid:
         return min(rows), max(rows), min(cols), max(cols)
 
 
-def build_grid(root, subwords, target_placed):
+def build_grid(root, subwords, grid_target):
     grid = Grid()
     grid.place(root, 0, 0, vertical=False)
     placed = [{"word": root, "row": 0, "col": 0, "dir": "across"}]
 
+    # Keep the visible grid to a modest, curated size. Every other
+    # valid subword we found still gets recognized when typed - it's
+    # just added as a "bonus" word instead of drawn into the grid (see
+    # make_puzzle below), so nothing a player types is ever a dead end.
     for word in subwords:
-        if len(placed) >= target_placed:
+        if len(placed) >= grid_target:
             break
         result = grid.try_place_anywhere(word)
         if result:
@@ -178,12 +274,16 @@ def build_grid(root, subwords, target_placed):
     return {"width": width, "height": height, "words": norm_placed}
 
 
-def make_puzzle(puzzle_id, difficulty, root, all_words, rng):
+def make_puzzle(puzzle_id, difficulty, root, all_words, bonus_words_pool, rng):
     subwords = find_subwords(root, all_words)
     cfg = DIFFICULTIES[difficulty]
-    grid = build_grid(root, subwords, cfg["target_placed"])
+    grid = build_grid(root, subwords, cfg["grid_target"])
     if grid is None or len(grid["words"]) < cfg["min_placed"]:
         return None
+
+    placed_words = {entry["word"] for entry in grid["words"]}
+    all_bonus_candidates = find_subwords(root, bonus_words_pool)
+    bonus_words = sorted(w for w in all_bonus_candidates if w not in placed_words)
 
     letters = list(root)
     rng.shuffle(letters)
@@ -194,19 +294,25 @@ def make_puzzle(puzzle_id, difficulty, root, all_words, rng):
         "letters": letters,
         "grid": {"width": grid["width"], "height": grid["height"]},
         "words": grid["words"],
+        "bonus_words": bonus_words,
     }
 
 
 def main():
+    _ensure_downloaded(WORDLIST_RAW, WORDLIST_RAW_URL)
+    _ensure_downloaded(BONUS_WORDLIST_RAW, BONUS_WORDLIST_RAW_URL)
+
     rng = random.Random(RNG_SEED)
     all_words = load_wordlist()
+    bonus_words_pool = load_bonus_wordlist(all_words)
+    print(f"grid word pool: {len(all_words)}, bonus word pool: {len(bonus_words_pool)}")
 
     for difficulty, cfg in DIFFICULTIES.items():
         out_dir = PUZZLES_DIR / difficulty
         out_dir.mkdir(parents=True, exist_ok=True)
 
         lo, hi = cfg["root_len"]
-        candidates = [w for w in all_words if lo <= len(w) <= hi]
+        candidates = sorted(w for w in all_words if lo <= len(w) <= hi)
         rng.shuffle(candidates)
 
         made = []
@@ -218,7 +324,9 @@ def main():
             if key in used_letter_sets:
                 continue
             puzzle_id = f"{difficulty}-{len(made) + 1:03d}"
-            puzzle = make_puzzle(puzzle_id, difficulty, root, all_words, rng)
+            puzzle = make_puzzle(
+                puzzle_id, difficulty, root, all_words, bonus_words_pool, rng
+            )
             if puzzle:
                 made.append(puzzle)
                 used_letter_sets.add(key)

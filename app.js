@@ -20,6 +20,8 @@
     btnShuffle: document.getElementById("btn-shuffle"),
     btnNext: document.getElementById("btn-next"),
     btnMenu: document.getElementById("btn-menu"),
+    bonusCounter: document.getElementById("bonus-counter"),
+    bonusCount: document.getElementById("bonus-count"),
   };
 
   let manifests = {}; // difficulty -> [ids]
@@ -124,6 +126,7 @@
       puzzle,
       cells: buildGridCells(puzzle),
       foundWords: new Set(),
+      foundBonusWords: new Set(),
       letters: shuffledLetters(puzzle.letters),
       usedTiles: new Set(),
       attempt: [],
@@ -132,6 +135,7 @@
     renderGrid();
     renderWheel();
     renderAttempt();
+    renderBonusCounter();
   }
 
   function shuffledLetters(letters) {
@@ -239,21 +243,44 @@
   function checkAttempt() {
     const word = state.attempt.map((t) => t.letter).join("");
     if (state.foundWords.has(word)) return;
+
     const match = state.puzzle.words.find((w) => w.word === word);
-    if (!match) return;
+    if (match) {
+      state.foundWords.add(word);
+      for (let i = 0; i < match.word.length; i++) {
+        const r = match.dir === "down" ? match.row + i : match.row;
+        const c = match.dir === "down" ? match.col : match.col + i;
+        state.cells[r][c].revealed = true;
+      }
+      clearAttempt();
+      renderGrid();
 
-    state.foundWords.add(word);
-    for (let i = 0; i < match.word.length; i++) {
-      const r = match.dir === "down" ? match.row + i : match.row;
-      const c = match.dir === "down" ? match.col : match.col + i;
-      state.cells[r][c].revealed = true;
+      if (state.foundWords.size === state.puzzle.words.length) {
+        setTimeout(showComplete, 300);
+      }
+      return;
     }
-    clearAttempt();
-    renderGrid();
 
-    if (state.foundWords.size === state.puzzle.words.length) {
-      setTimeout(showComplete, 300);
+    // Not a grid word - check whether it's a valid "bonus" word instead.
+    // Bonus words are real words formable from the wheel that just
+    // aren't part of the visible grid; finding one only bumps a small
+    // counter, it never affects puzzle completion.
+    const bonusWords = state.puzzle.bonus_words || [];
+    if (!state.foundBonusWords.has(word) && bonusWords.includes(word)) {
+      state.foundBonusWords.add(word);
+      clearAttempt();
+      renderBonusCounter();
     }
+  }
+
+  function renderBonusCounter() {
+    const total = (state.puzzle.bonus_words || []).length;
+    if (total === 0) {
+      el.bonusCounter.hidden = true;
+      return;
+    }
+    el.bonusCounter.hidden = false;
+    el.bonusCount.textContent = state.foundBonusWords.size;
   }
 
   function clearAttempt() {

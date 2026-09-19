@@ -2,65 +2,66 @@
   "id": "easy-014",
   "difficulty": "easy",
   "letters": [
-    "m",
-    "d",
-    "h",
     "o",
-    "t",
+    "l",
+    "s",
+    "s",
+    "n",
     "e"
   ],
   "grid": {
     "width": 8,
-    "height": 8
+    "height": 6
   },
   "words": [
     {
-      "word": "method",
-      "row": 4,
-      "col": 2,
-      "dir": "across"
-    },
-    {
-      "word": "home",
-      "row": 2,
-      "col": 2,
-      "dir": "down"
-    },
-    {
-      "word": "mode",
-      "row": 3,
-      "col": 6,
-      "dir": "down"
-    },
-    {
-      "word": "them",
-      "row": 4,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "hot",
+      "word": "lesson",
       "row": 2,
       "col": 2,
       "dir": "across"
     },
     {
-      "word": "met",
+      "word": "lens",
+      "row": 2,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "less",
       "row": 0,
       "col": 4,
       "dir": "down"
     },
     {
-      "word": "tom",
-      "row": 7,
-      "col": 2,
-      "dir": "across"
+      "word": "lose",
+      "row": 1,
+      "col": 6,
+      "dir": "down"
     },
     {
-      "word": "the",
+      "word": "loss",
       "row": 5,
       "col": 0,
       "dir": "across"
+    },
+    {
+      "word": "one",
+      "row": 3,
+      "col": 0,
+      "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "els",
+    "ess",
+    "lone",
+    "ness",
+    "noel",
+    "nose",
+    "ons",
+    "sen",
+    "sol",
+    "sole",
+    "sons"
   ]
 }

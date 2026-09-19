@@ -2,59 +2,96 @@
   "id": "easy-013",
   "difficulty": "easy",
   "letters": [
-    "g",
-    "s",
-    "i",
     "a",
-    "l",
-    "n"
+    "i",
+    "e",
+    "m",
+    "n",
+    "r"
   ],
   "grid": {
-    "width": 6,
+    "width": 12,
     "height": 8
   },
   "words": [
     {
-      "word": "signal",
-      "row": 5,
-      "col": 0,
+      "word": "marine",
+      "row": 2,
+      "col": 3,
       "dir": "across"
     },
     {
-      "word": "gain",
-      "row": 3,
+      "word": "remain",
+      "row": 0,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "anime",
+      "row": 0,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "earn",
+      "row": 2,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "main",
+      "row": 4,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "mean",
+      "row": 4,
       "col": 1,
       "dir": "down"
     },
     {
-      "word": "sign",
-      "row": 2,
-      "col": 3,
-      "dir": "down"
-    },
-    {
-      "word": "san",
-      "row": 2,
-      "col": 3,
+      "word": "mine",
+      "row": 1,
+      "col": 0,
       "dir": "across"
     },
     {
-      "word": "sin",
+      "word": "name",
       "row": 0,
       "col": 5,
-      "dir": "down"
-    },
-    {
-      "word": "gas",
-      "row": 0,
-      "col": 3,
       "dir": "across"
     },
     {
-      "word": "las",
+      "word": "near",
       "row": 5,
-      "col": 5,
-      "dir": "down"
+      "col": 8,
+      "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "aim",
+    "air",
+    "ame",
+    "amen",
+    "are",
+    "arm",
+    "ear",
+    "era",
+    "ire",
+    "mae",
+    "man",
+    "mar",
+    "mare",
+    "mein",
+    "men",
+    "min",
+    "miner",
+    "mir",
+    "nam",
+    "rain",
+    "ran",
+    "reina",
+    "rim"
   ]
 }

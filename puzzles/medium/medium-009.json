@@ -2,85 +2,104 @@
   "id": "medium-009",
   "difficulty": "medium",
   "letters": [
-    "e",
-    "a",
-    "i",
-    "t",
     "s",
-    "m",
     "t",
-    "e"
+    "d",
+    "u",
+    "t",
+    "e",
+    "n"
   ],
   "grid": {
-    "width": 12,
-    "height": 12
+    "width": 9,
+    "height": 7
   },
   "words": [
     {
-      "word": "estimate",
+      "word": "student",
       "row": 3,
-      "col": 3,
-      "dir": "across"
-    },
-    {
-      "word": "estate",
-      "row": 3,
-      "col": 3,
-      "dir": "down"
-    },
-    {
-      "word": "state",
-      "row": 2,
-      "col": 5,
-      "dir": "down"
-    },
-    {
-      "word": "times",
-      "row": 1,
-      "col": 7,
-      "dir": "down"
-    },
-    {
-      "word": "team",
-      "row": 3,
-      "col": 9,
-      "dir": "down"
-    },
-    {
-      "word": "seem",
-      "row": 8,
       "col": 2,
       "dir": "across"
     },
     {
-      "word": "same",
+      "word": "send",
+      "row": 3,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "sent",
       "row": 0,
-      "col": 10,
-      "dir": "down"
-    },
-    {
-      "word": "seat",
-      "row": 5,
-      "col": 0,
-      "dir": "across"
-    },
-    {
-      "word": "site",
-      "row": 8,
-      "col": 2,
-      "dir": "down"
-    },
-    {
-      "word": "item",
-      "row": 3,
-      "col": 1,
+      "col": 3,
       "dir": "down"
     },
     {
       "word": "test",
-      "row": 0,
+      "row": 2,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "used",
+      "row": 3,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "due",
+      "row": 4,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "end",
+      "row": 6,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "net",
+      "row": 1,
       "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "set",
+      "row": 0,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "ten",
+      "row": 5,
+      "col": 6,
+      "dir": "across"
+    },
+    {
+      "word": "use",
+      "row": 1,
+      "col": 1,
       "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "den",
+    "dent",
+    "duet",
+    "dun",
+    "dune",
+    "dust",
+    "nest",
+    "nude",
+    "nut",
+    "sen",
+    "stud",
+    "stunt",
+    "sud",
+    "sun",
+    "tend",
+    "tent",
+    "tune",
+    "tuned"
   ]
 }

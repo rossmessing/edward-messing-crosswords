@@ -2,46 +2,93 @@
   "id": "easy-012",
   "difficulty": "easy",
   "letters": [
-    "h",
+    "l",
     "a",
-    "p",
-    "s",
-    "e"
+    "e",
+    "t",
+    "s"
   ],
   "grid": {
-    "width": 7,
-    "height": 5
+    "width": 9,
+    "height": 8
   },
   "words": [
     {
-      "word": "shape",
-      "row": 3,
-      "col": 2,
+      "word": "least",
+      "row": 2,
+      "col": 4,
       "dir": "across"
     },
     {
-      "word": "phase",
-      "row": 0,
-      "col": 2,
-      "dir": "down"
-    },
-    {
-      "word": "spa",
-      "row": 1,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "sea",
+      "word": "east",
       "row": 2,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "last",
+      "row": 0,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "late",
+      "row": 5,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "sale",
+      "row": 0,
+      "col": 5,
+      "dir": "across"
+    },
+    {
+      "word": "salt",
+      "row": 3,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "seat",
+      "row": 6,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "eat",
+      "row": 5,
       "col": 6,
       "dir": "down"
     },
     {
-      "word": "she",
-      "row": 4,
-      "col": 0,
-      "dir": "across"
+      "word": "let",
+      "row": 5,
+      "col": 1,
+      "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "aes",
+    "ale",
+    "alt",
+    "ate",
+    "eats",
+    "els",
+    "eta",
+    "lat",
+    "lest",
+    "sat",
+    "sea",
+    "seal",
+    "set",
+    "sla",
+    "slate",
+    "steal",
+    "tae",
+    "tale",
+    "tales",
+    "tea",
+    "teal"
   ]
 }

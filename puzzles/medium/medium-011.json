@@ -2,84 +2,144 @@
   "id": "medium-011",
   "difficulty": "medium",
   "letters": [
-    "m",
-    "m",
-    "t",
+    "r",
     "o",
+    "p",
+    "t",
     "e",
-    "c",
-    "n"
+    "o",
+    "r",
+    "a"
   ],
   "grid": {
-    "width": 12,
+    "width": 13,
     "height": 9
   },
   "words": [
     {
-      "word": "comment",
-      "row": 2,
+      "word": "operator",
+      "row": 5,
       "col": 3,
       "dir": "across"
     },
     {
-      "word": "moment",
-      "row": 1,
-      "col": 4,
+      "word": "report",
+      "row": 2,
+      "col": 3,
       "dir": "down"
     },
     {
-      "word": "cent",
-      "row": 1,
+      "word": "opera",
+      "row": 3,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "poor",
+      "row": 4,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "port",
+      "row": 2,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "rare",
+      "row": 4,
       "col": 7,
       "dir": "down"
     },
     {
-      "word": "once",
-      "row": 4,
-      "col": 1,
+      "word": "rate",
+      "row": 7,
+      "col": 9,
       "dir": "across"
     },
     {
-      "word": "note",
-      "row": 0,
-      "col": 9,
-      "dir": "down"
+      "word": "rear",
+      "row": 6,
+      "col": 0,
+      "dir": "across"
     },
     {
-      "word": "come",
-      "row": 3,
+      "word": "tape",
+      "row": 0,
       "col": 1,
       "dir": "down"
     },
     {
-      "word": "ten",
-      "row": 6,
+      "word": "are",
+      "row": 7,
+      "col": 5,
+      "dir": "across"
+    },
+    {
+      "word": "eat",
+      "row": 0,
       "col": 4,
-      "dir": "across"
-    },
-    {
-      "word": "not",
-      "row": 0,
-      "col": 9,
-      "dir": "across"
-    },
-    {
-      "word": "met",
-      "row": 6,
-      "col": 0,
-      "dir": "across"
-    },
-    {
-      "word": "men",
-      "row": 6,
-      "col": 0,
       "dir": "down"
     },
     {
-      "word": "tom",
-      "row": 0,
-      "col": 11,
+      "word": "pet",
+      "row": 6,
+      "col": 12,
       "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "aero",
+    "ape",
+    "apt",
+    "ate",
+    "atop",
+    "ear",
+    "era",
+    "err",
+    "eta",
+    "opt",
+    "ore",
+    "par",
+    "parrot",
+    "pea",
+    "pear",
+    "peat",
+    "poet",
+    "pore",
+    "porter",
+    "porto",
+    "pot",
+    "pro",
+    "proto",
+    "rap",
+    "rape",
+    "raptor",
+    "rat",
+    "reap",
+    "rep",
+    "ret",
+    "roar",
+    "roe",
+    "rope",
+    "rot",
+    "rotor",
+    "tae",
+    "tap",
+    "taper",
+    "tar",
+    "tea",
+    "tear",
+    "toe",
+    "too",
+    "top",
+    "topo",
+    "tore",
+    "toro",
+    "tra",
+    "trap",
+    "troop",
+    "trooper"
   ]
 }

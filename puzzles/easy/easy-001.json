@@ -2,59 +2,63 @@
   "id": "easy-001",
   "difficulty": "easy",
   "letters": [
-    "o",
+    "e",
+    "e",
     "t",
-    "g",
-    "u",
-    "h",
-    "b"
+    "r",
+    "t",
+    "s"
   ],
   "grid": {
-    "width": 10,
-    "height": 7
+    "width": 8,
+    "height": 6
   },
   "words": [
     {
-      "word": "bought",
+      "word": "street",
       "row": 2,
       "col": 2,
       "dir": "across"
     },
     {
-      "word": "both",
-      "row": 2,
+      "word": "rest",
+      "row": 0,
       "col": 2,
       "dir": "down"
     },
     {
-      "word": "got",
-      "row": 2,
+      "word": "test",
+      "row": 1,
       "col": 5,
       "dir": "down"
     },
     {
-      "word": "hot",
-      "row": 0,
+      "word": "tree",
+      "row": 2,
       "col": 7,
       "dir": "down"
     },
     {
-      "word": "but",
-      "row": 4,
-      "col": 0,
-      "dir": "across"
-    },
-    {
-      "word": "out",
+      "word": "see",
       "row": 1,
-      "col": 7,
+      "col": 0,
       "dir": "across"
     },
     {
-      "word": "bug",
-      "row": 4,
+      "word": "set",
+      "row": 3,
       "col": 0,
-      "dir": "down"
+      "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "ers",
+    "ester",
+    "reset",
+    "ret",
+    "setter",
+    "steer",
+    "tee",
+    "tester"
   ]
 }

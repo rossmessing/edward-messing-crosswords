@@ -2,84 +2,134 @@
   "id": "medium-014",
   "difficulty": "medium",
   "letters": [
-    "i",
-    "h",
-    "a",
-    "m",
     "c",
-    "n",
-    "e"
+    "e",
+    "r",
+    "u",
+    "o",
+    "t",
+    "n"
   ],
   "grid": {
-    "width": 11,
+    "width": 15,
     "height": 12
   },
   "words": [
     {
-      "word": "machine",
-      "row": 7,
-      "col": 2,
-      "dir": "across"
-    },
-    {
-      "word": "cinema",
-      "row": 3,
-      "col": 2,
-      "dir": "down"
-    },
-    {
-      "word": "chain",
-      "row": 7,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "china",
+      "word": "counter",
       "row": 5,
-      "col": 6,
-      "dir": "down"
-    },
-    {
-      "word": "anime",
-      "row": 3,
-      "col": 8,
-      "dir": "down"
-    },
-    {
-      "word": "each",
-      "row": 3,
-      "col": 0,
-      "dir": "across"
-    },
-    {
-      "word": "inch",
-      "row": 5,
-      "col": 1,
-      "dir": "across"
-    },
-    {
-      "word": "mean",
-      "row": 11,
-      "col": 1,
-      "dir": "across"
-    },
-    {
-      "word": "name",
-      "row": 3,
       "col": 7,
       "dir": "across"
     },
     {
-      "word": "came",
-      "row": 0,
-      "col": 0,
+      "word": "count",
+      "row": 5,
+      "col": 7,
       "dir": "down"
     },
     {
-      "word": "nice",
+      "word": "court",
+      "row": 3,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "route",
+      "row": 2,
+      "col": 11,
+      "dir": "down"
+    },
+    {
+      "word": "cent",
+      "row": 8,
+      "col": 5,
+      "dir": "across"
+    },
+    {
+      "word": "core",
+      "row": 3,
+      "col": 13,
+      "dir": "down"
+    },
+    {
+      "word": "cute",
+      "row": 8,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "note",
+      "row": 10,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "once",
+      "row": 3,
+      "col": 11,
+      "dir": "across"
+    },
+    {
+      "word": "rent",
+      "row": 8,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "tour",
+      "row": 8,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "true",
       "row": 0,
-      "col": 10,
+      "col": 14,
       "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "cern",
+    "coe",
+    "con",
+    "cone",
+    "corn",
+    "cot",
+    "cote",
+    "cue",
+    "cur",
+    "cure",
+    "cut",
+    "net",
+    "nor",
+    "not",
+    "nut",
+    "one",
+    "orc",
+    "ore",
+    "ounce",
+    "our",
+    "out",
+    "outer",
+    "recon",
+    "ret",
+    "roe",
+    "rot",
+    "rue",
+    "run",
+    "tec",
+    "ten",
+    "tenor",
+    "toe",
+    "ton",
+    "tone",
+    "toner",
+    "tore",
+    "torn",
+    "tune",
+    "tuner",
+    "turn",
+    "unto",
+    "urn"
   ]
 }

@@ -2,84 +2,88 @@
   "id": "medium-015",
   "difficulty": "medium",
   "letters": [
-    "y",
-    "p",
     "r",
+    "k",
     "i",
-    "m",
-    "r",
-    "a"
+    "g",
+    "n",
+    "n",
+    "d",
+    "i"
   ],
   "grid": {
-    "width": 8,
-    "height": 10
+    "width": 10,
+    "height": 9
   },
   "words": [
     {
-      "word": "primary",
+      "word": "drinking",
+      "row": 3,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "dining",
+      "row": 3,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "drink",
+      "row": 1,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "grid",
+      "row": 1,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "kind",
+      "row": 7,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "ring",
+      "row": 0,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "ink",
+      "row": 5,
+      "col": 0,
+      "dir": "down"
+    },
+    {
+      "word": "inn",
       "row": 5,
       "col": 0,
       "dir": "across"
     },
     {
-      "word": "mary",
-      "row": 3,
-      "col": 1,
-      "dir": "down"
-    },
-    {
-      "word": "pair",
-      "row": 4,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "army",
-      "row": 2,
-      "col": 6,
-      "dir": "down"
-    },
-    {
-      "word": "mar",
-      "row": 3,
-      "col": 1,
-      "dir": "across"
-    },
-    {
-      "word": "may",
-      "row": 2,
-      "col": 5,
-      "dir": "across"
-    },
-    {
-      "word": "ram",
-      "row": 7,
-      "col": 4,
-      "dir": "across"
-    },
-    {
-      "word": "air",
-      "row": 1,
-      "col": 3,
-      "dir": "down"
-    },
-    {
-      "word": "pay",
-      "row": 0,
-      "col": 7,
-      "dir": "down"
-    },
-    {
-      "word": "ray",
+      "word": "kid",
       "row": 1,
       "col": 2,
       "dir": "across"
-    },
-    {
-      "word": "aim",
-      "row": 7,
-      "col": 5,
-      "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "dig",
+    "din",
+    "ding",
+    "gin",
+    "grin",
+    "grind",
+    "kin",
+    "nid",
+    "rid",
+    "riding",
+    "rig",
+    "rigid",
+    "rink"
   ]
 }

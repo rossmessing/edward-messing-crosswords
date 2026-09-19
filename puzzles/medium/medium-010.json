@@ -2,84 +2,72 @@
   "id": "medium-010",
   "difficulty": "medium",
   "letters": [
+    "o",
     "t",
-    "n",
-    "t",
-    "i",
-    "p",
-    "a",
-    "e"
+    "r",
+    "o",
+    "o",
+    "d",
+    "u"
   ],
   "grid": {
-    "width": 10,
-    "height": 12
+    "width": 11,
+    "height": 6
   },
   "words": [
     {
-      "word": "patient",
-      "row": 4,
-      "col": 3,
+      "word": "outdoor",
+      "row": 2,
+      "col": 2,
       "dir": "across"
     },
     {
-      "word": "patent",
-      "row": 4,
-      "col": 3,
+      "word": "door",
+      "row": 1,
+      "col": 2,
       "dir": "down"
     },
     {
-      "word": "paint",
+      "word": "tour",
+      "row": 2,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "dot",
+      "row": 1,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "our",
       "row": 0,
-      "col": 5,
-      "dir": "down"
-    },
-    {
-      "word": "anti",
-      "row": 3,
       "col": 8,
       "dir": "down"
     },
     {
-      "word": "tape",
-      "row": 6,
-      "col": 3,
-      "dir": "across"
-    },
-    {
-      "word": "pain",
-      "row": 8,
-      "col": 0,
-      "dir": "across"
-    },
-    {
-      "word": "ten",
-      "row": 9,
-      "col": 3,
-      "dir": "across"
-    },
-    {
-      "word": "pet",
+      "word": "out",
       "row": 0,
-      "col": 5,
+      "col": 8,
       "dir": "across"
     },
     {
-      "word": "pan",
-      "row": 8,
-      "col": 0,
-      "dir": "down"
-    },
-    {
-      "word": "tea",
+      "word": "rot",
       "row": 5,
-      "col": 1,
+      "col": 4,
       "dir": "across"
     },
     {
-      "word": "net",
-      "row": 9,
-      "col": 5,
-      "dir": "down"
+      "word": "too",
+      "row": 3,
+      "col": 0,
+      "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "duo",
+    "odor",
+    "tod",
+    "toro"
   ]
 }

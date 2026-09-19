@@ -2,65 +2,72 @@
   "id": "easy-002",
   "difficulty": "easy",
   "letters": [
+    "l",
     "m",
-    "e",
-    "t",
-    "r",
-    "o",
-    "e"
+    "a",
+    "a",
+    "i",
+    "n"
   ],
   "grid": {
-    "width": 9,
-    "height": 8
+    "width": 7,
+    "height": 5
   },
   "words": [
     {
-      "word": "remote",
-      "row": 4,
-      "col": 2,
+      "word": "animal",
+      "row": 2,
+      "col": 0,
       "dir": "across"
     },
     {
-      "word": "meter",
+      "word": "mail",
+      "row": 1,
+      "col": 0,
+      "dir": "down"
+    },
+    {
+      "word": "main",
       "row": 0,
       "col": 2,
       "dir": "down"
     },
     {
-      "word": "more",
-      "row": 4,
+      "word": "aim",
+      "row": 2,
       "col": 4,
       "dir": "down"
     },
     {
-      "word": "meet",
-      "row": 1,
-      "col": 6,
-      "dir": "down"
-    },
-    {
-      "word": "tree",
-      "row": 1,
-      "col": 0,
-      "dir": "across"
-    },
-    {
-      "word": "term",
-      "row": 6,
+      "word": "man",
+      "row": 0,
       "col": 2,
       "dir": "across"
     },
     {
-      "word": "met",
-      "row": 1,
-      "col": 6,
+      "word": "min",
+      "row": 4,
+      "col": 4,
       "dir": "across"
-    },
-    {
-      "word": "tom",
-      "row": 1,
-      "col": 0,
-      "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "ala",
+    "alma",
+    "ama",
+    "anal",
+    "lai",
+    "lam",
+    "lama",
+    "lan",
+    "mal",
+    "mali",
+    "mana",
+    "mania",
+    "manila",
+    "mil",
+    "nail",
+    "nam",
+    "nil"
   ]
 }

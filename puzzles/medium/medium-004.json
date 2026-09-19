@@ -2,84 +2,99 @@
   "id": "medium-004",
   "difficulty": "medium",
   "letters": [
+    "i",
     "r",
-    "o",
+    "c",
     "a",
-    "m",
-    "e",
-    "n",
-    "c"
+    "p",
+    "g",
+    "h"
   ],
   "grid": {
-    "width": 12,
+    "width": 8,
     "height": 9
   },
   "words": [
     {
-      "word": "romance",
+      "word": "graphic",
       "row": 4,
-      "col": 3,
-      "dir": "across"
-    },
-    {
-      "word": "ocean",
-      "row": 4,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "cream",
-      "row": 0,
-      "col": 5,
-      "dir": "down"
-    },
-    {
-      "word": "earn",
-      "row": 1,
-      "col": 7,
-      "dir": "down"
-    },
-    {
-      "word": "mean",
-      "row": 3,
-      "col": 9,
-      "dir": "down"
-    },
-    {
-      "word": "near",
-      "row": 1,
-      "col": 3,
-      "dir": "down"
-    },
-    {
-      "word": "more",
-      "row": 6,
       "col": 1,
       "dir": "across"
     },
     {
-      "word": "name",
-      "row": 8,
-      "col": 4,
+      "word": "chair",
+      "row": 0,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "char",
+      "row": 3,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "hair",
+      "row": 1,
+      "col": 2,
       "dir": "across"
     },
     {
-      "word": "came",
-      "row": 2,
+      "word": "pair",
+      "row": 6,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "air",
+      "row": 0,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "cap",
+      "row": 4,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "pic",
+      "row": 0,
       "col": 0,
       "dir": "across"
     },
     {
-      "word": "once",
+      "word": "pig",
       "row": 6,
-      "col": 8,
-      "dir": "across"
-    },
-    {
-      "word": "core",
-      "row": 5,
       "col": 2,
       "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "ach",
+    "arc",
+    "arch",
+    "car",
+    "carp",
+    "cha",
+    "chai",
+    "chap",
+    "chi",
+    "cigar",
+    "crap",
+    "gap",
+    "graph",
+    "grip",
+    "harp",
+    "hip",
+    "ich",
+    "pac",
+    "par",
+    "phi",
+    "pir",
+    "rag",
+    "rap",
+    "rig",
+    "rip"
   ]
 }

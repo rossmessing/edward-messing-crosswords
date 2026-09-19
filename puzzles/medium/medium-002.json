@@ -2,67 +2,87 @@
   "id": "medium-002",
   "difficulty": "medium",
   "letters": [
-    "n",
+    "a",
     "i",
+    "v",
+    "r",
     "t",
-    "t",
-    "i",
-    "d",
-    "y",
-    "e"
+    "u",
+    "l"
   ],
   "grid": {
-    "width": 10,
-    "height": 5
+    "width": 8,
+    "height": 9
   },
   "words": [
     {
-      "word": "identity",
-      "row": 2,
-      "col": 2,
+      "word": "virtual",
+      "row": 4,
+      "col": 1,
       "dir": "across"
     },
     {
-      "word": "edit",
-      "row": 0,
+      "word": "trail",
+      "row": 1,
       "col": 2,
       "dir": "down"
     },
     {
-      "word": "diet",
-      "row": 0,
+      "word": "trial",
+      "row": 4,
       "col": 4,
       "dir": "down"
     },
     {
-      "word": "ten",
-      "row": 2,
+      "word": "ultra",
+      "row": 0,
       "col": 6,
       "dir": "down"
     },
     {
-      "word": "net",
-      "row": 0,
-      "col": 8,
-      "dir": "down"
-    },
-    {
-      "word": "die",
-      "row": 0,
+      "word": "air",
+      "row": 2,
       "col": 0,
       "dir": "across"
     },
     {
-      "word": "yet",
-      "row": 2,
-      "col": 9,
-      "dir": "down"
+      "word": "vat",
+      "row": 7,
+      "col": 3,
+      "dir": "across"
     },
     {
-      "word": "end",
-      "row": 4,
-      "col": 5,
-      "dir": "across"
+      "word": "via",
+      "row": 0,
+      "col": 0,
+      "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "alt",
+    "iva",
+    "lai",
+    "lair",
+    "lat",
+    "liar",
+    "lira",
+    "lit",
+    "rail",
+    "rat",
+    "rial",
+    "rita",
+    "ritual",
+    "rival",
+    "tail",
+    "tar",
+    "tau",
+    "tra",
+    "tri",
+    "uva",
+    "vail",
+    "vault",
+    "viral",
+    "vita",
+    "vital"
   ]
 }

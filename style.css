@@ -134,6 +134,23 @@ h1 {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
 }
 
+.bonus-counter {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--tile-bg);
+  border-radius: 14px;
+  padding: 10px 16px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.bonus-counter #bonus-count {
+  color: var(--accent);
+}
+
 .grid {
   display: grid;
   gap: 4px;

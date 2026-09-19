@@ -2,65 +2,74 @@
   "id": "easy-006",
   "difficulty": "easy",
   "letters": [
-    "r",
-    "e",
-    "m",
-    "d",
     "n",
-    "o"
+    "g",
+    "p",
+    "a",
+    "y",
+    "i"
   ],
   "grid": {
-    "width": 9,
+    "width": 6,
     "height": 7
   },
   "words": [
     {
-      "word": "modern",
-      "row": 3,
-      "col": 2,
+      "word": "paying",
+      "row": 4,
+      "col": 0,
       "dir": "across"
     },
     {
-      "word": "done",
+      "word": "gain",
+      "row": 3,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "pain",
       "row": 2,
       "col": 3,
       "dir": "down"
     },
     {
-      "word": "more",
-      "row": 0,
-      "col": 5,
-      "dir": "down"
-    },
-    {
-      "word": "node",
-      "row": 3,
-      "col": 7,
-      "dir": "down"
-    },
-    {
-      "word": "mode",
-      "row": 5,
+      "word": "any",
+      "row": 6,
       "col": 0,
       "dir": "across"
     },
     {
-      "word": "don",
-      "row": 1,
-      "col": 4,
-      "dir": "across"
-    },
-    {
-      "word": "nor",
+      "word": "gay",
       "row": 4,
-      "col": 1,
+      "col": 5,
       "dir": "down"
     },
     {
-      "word": "men",
-      "row": 6,
-      "col": 6,
+      "word": "pan",
+      "row": 2,
+      "col": 3,
       "dir": "across"
+    },
+    {
+      "word": "pin",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "gan",
+    "gap",
+    "gin",
+    "gyn",
+    "nag",
+    "nap",
+    "nay",
+    "nip",
+    "pay",
+    "pig",
+    "yan",
+    "yang",
+    "yin"
   ]
 }

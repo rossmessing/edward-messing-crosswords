@@ -2,47 +2,61 @@
   "id": "easy-011",
   "difficulty": "easy",
   "letters": [
+    "c",
     "i",
-    "g",
-    "n",
+    "s",
     "a",
-    "r",
-    "c"
+    "o",
+    "n"
   ],
   "grid": {
-    "width": 7,
-    "height": 7
+    "width": 8,
+    "height": 6
   },
   "words": [
     {
-      "word": "racing",
-      "row": 3,
-      "col": 1,
+      "word": "casino",
+      "row": 2,
+      "col": 2,
       "dir": "across"
     },
     {
-      "word": "rain",
-      "row": 3,
-      "col": 1,
+      "word": "icon",
+      "row": 1,
+      "col": 2,
       "dir": "down"
     },
     {
-      "word": "gain",
-      "row": 1,
+      "word": "scan",
+      "row": 2,
       "col": 4,
       "dir": "down"
     },
     {
-      "word": "ring",
+      "word": "can",
       "row": 0,
       "col": 6,
       "dir": "down"
     },
     {
-      "word": "air",
-      "row": 5,
+      "word": "con",
+      "row": 4,
       "col": 0,
       "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "cain",
+    "coin",
+    "ion",
+    "ons",
+    "sac",
+    "sai",
+    "san",
+    "scion",
+    "sic",
+    "sin",
+    "sion",
+    "sonic"
   ]
 }

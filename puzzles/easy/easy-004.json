@@ -2,65 +2,72 @@
   "id": "easy-004",
   "difficulty": "easy",
   "letters": [
-    "i",
-    "e",
-    "r",
     "t",
-    "l",
-    "f"
+    "e",
+    "s",
+    "n",
+    "p"
   ],
   "grid": {
-    "width": 9,
-    "height": 6
+    "width": 8,
+    "height": 7
   },
   "words": [
     {
-      "word": "filter",
+      "word": "spent",
       "row": 3,
-      "col": 3,
+      "col": 2,
       "dir": "across"
     },
     {
-      "word": "left",
-      "row": 1,
+      "word": "sent",
+      "row": 3,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "step",
+      "row": 0,
       "col": 3,
       "dir": "down"
     },
     {
-      "word": "fire",
-      "row": 0,
-      "col": 7,
-      "dir": "down"
-    },
-    {
-      "word": "felt",
-      "row": 1,
+      "word": "net",
+      "row": 3,
       "col": 5,
       "dir": "down"
     },
     {
-      "word": "file",
-      "row": 2,
+      "word": "pet",
+      "row": 1,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "pst",
+      "row": 6,
       "col": 0,
       "dir": "across"
     },
     {
-      "word": "life",
+      "word": "set",
       "row": 0,
-      "col": 0,
-      "dir": "down"
+      "col": 3,
+      "dir": "across"
     },
     {
-      "word": "ref",
-      "row": 3,
-      "col": 8,
-      "dir": "down"
-    },
-    {
-      "word": "let",
-      "row": 4,
-      "col": 1,
+      "word": "ten",
+      "row": 5,
+      "col": 5,
       "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "nep",
+    "nest",
+    "pen",
+    "pest",
+    "sen",
+    "sept"
   ]
 }

@@ -2,11 +2,10 @@
   "id": "easy-015",
   "difficulty": "easy",
   "letters": [
-    "n",
-    "g",
-    "i",
     "e",
-    "e",
+    "s",
+    "a",
+    "t",
     "s"
   ],
   "grid": {
@@ -15,40 +14,61 @@
   },
   "words": [
     {
-      "word": "seeing",
-      "row": 3,
-      "col": 2,
-      "dir": "across"
-    },
-    {
-      "word": "seen",
-      "row": 3,
-      "col": 2,
-      "dir": "down"
-    },
-    {
-      "word": "sign",
+      "word": "asset",
       "row": 2,
-      "col": 5,
-      "dir": "down"
-    },
-    {
-      "word": "gene",
-      "row": 0,
-      "col": 3,
-      "dir": "down"
-    },
-    {
-      "word": "sin",
-      "row": 6,
-      "col": 0,
+      "col": 2,
       "dir": "across"
     },
     {
-      "word": "see",
+      "word": "east",
+      "row": 1,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "seat",
+      "row": 2,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "eat",
+      "row": 0,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "sat",
       "row": 4,
       "col": 0,
       "dir": "across"
+    },
+    {
+      "word": "sea",
+      "row": 0,
+      "col": 5,
+      "dir": "across"
+    },
+    {
+      "word": "set",
+      "row": 4,
+      "col": 0,
+      "dir": "down"
+    },
+    {
+      "word": "tea",
+      "row": 5,
+      "col": 4,
+      "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "aes",
+    "ass",
+    "ate",
+    "eats",
+    "ess",
+    "eta",
+    "tae"
   ]
 }

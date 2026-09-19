@@ -2,61 +2,123 @@
   "id": "medium-001",
   "difficulty": "medium",
   "letters": [
-    "r",
-    "o",
     "e",
-    "x",
-    "r",
-    "p",
-    "e",
-    "l"
+    "z",
+    "a",
+    "i",
+    "a",
+    "m",
+    "g",
+    "n"
   ],
   "grid": {
-    "width": 10,
-    "height": 8
+    "width": 14,
+    "height": 13
   },
   "words": [
     {
-      "word": "explorer",
-      "row": 1,
-      "col": 2,
+      "word": "magazine",
+      "row": 4,
+      "col": 3,
       "dir": "across"
     },
     {
-      "word": "explore",
-      "row": 1,
-      "col": 2,
+      "word": "amazing",
+      "row": 3,
+      "col": 3,
       "dir": "down"
     },
     {
-      "word": "peer",
-      "row": 1,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "role",
+      "word": "manage",
       "row": 0,
-      "col": 6,
+      "col": 5,
       "dir": "down"
     },
     {
-      "word": "per",
-      "row": 0,
+      "word": "again",
+      "row": 1,
       "col": 8,
       "dir": "down"
     },
     {
-      "word": "pro",
-      "row": 5,
+      "word": "anime",
+      "row": 0,
+      "col": 10,
+      "dir": "down"
+    },
+    {
+      "word": "image",
+      "row": 7,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "gain",
+      "row": 8,
       "col": 0,
       "dir": "across"
     },
     {
-      "word": "lee",
-      "row": 7,
-      "col": 1,
+      "word": "game",
+      "row": 9,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "main",
+      "row": 1,
+      "col": 7,
+      "dir": "across"
+    },
+    {
+      "word": "mean",
+      "row": 3,
+      "col": 10,
+      "dir": "across"
+    },
+    {
+      "word": "mine",
+      "row": 9,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "name",
+      "row": 0,
+      "col": 3,
       "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "aga",
+    "age",
+    "aim",
+    "ama",
+    "ame",
+    "amen",
+    "anemia",
+    "enigma",
+    "gam",
+    "gan",
+    "gaze",
+    "gem",
+    "gen",
+    "gin",
+    "mae",
+    "mag",
+    "mage",
+    "maize",
+    "man",
+    "mana",
+    "manga",
+    "mania",
+    "maze",
+    "mein",
+    "men",
+    "mig",
+    "min",
+    "ming",
+    "nag",
+    "nam"
   ]
 }

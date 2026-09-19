@@ -2,79 +2,115 @@
   "id": "medium-003",
   "difficulty": "medium",
   "letters": [
-    "d",
-    "r",
-    "g",
-    "k",
-    "n",
+    "o",
     "i",
-    "n",
-    "i"
+    "i",
+    "t",
+    "d",
+    "e",
+    "n"
   ],
   "grid": {
-    "width": 13,
+    "width": 12,
     "height": 8
   },
   "words": [
     {
-      "word": "drinking",
+      "word": "edition",
+      "row": 5,
+      "col": 5,
+      "dir": "across"
+    },
+    {
+      "word": "noted",
       "row": 2,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "diet",
+      "row": 4,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "done",
+      "row": 4,
+      "col": 10,
+      "dir": "down"
+    },
+    {
+      "word": "edit",
+      "row": 4,
       "col": 2,
       "dir": "across"
     },
     {
-      "word": "dining",
+      "word": "into",
       "row": 2,
+      "col": 4,
+      "dir": "across"
+    },
+    {
+      "word": "node",
+      "row": 1,
       "col": 2,
       "dir": "down"
     },
     {
-      "word": "drink",
-      "row": 0,
-      "col": 4,
+      "word": "die",
+      "row": 4,
+      "col": 3,
       "dir": "down"
     },
     {
-      "word": "king",
-      "row": 2,
+      "word": "dot",
+      "row": 0,
       "col": 6,
       "dir": "down"
     },
     {
-      "word": "grid",
-      "row": 2,
-      "col": 9,
-      "dir": "down"
-    },
-    {
-      "word": "kind",
+      "word": "end",
       "row": 6,
-      "col": 0,
+      "col": 3,
       "dir": "across"
     },
     {
-      "word": "ring",
-      "row": 3,
+      "word": "net",
+      "row": 7,
       "col": 9,
       "dir": "across"
     },
     {
-      "word": "kid",
-      "row": 0,
-      "col": 2,
-      "dir": "across"
-    },
-    {
-      "word": "inn",
-      "row": 0,
-      "col": 8,
-      "dir": "down"
-    },
-    {
-      "word": "ink",
-      "row": 4,
+      "word": "nod",
+      "row": 3,
       "col": 0,
-      "dir": "down"
+      "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "den",
+    "dent",
+    "din",
+    "dine",
+    "doe",
+    "idiot",
+    "iodine",
+    "ion",
+    "nid",
+    "not",
+    "note",
+    "ode",
+    "one",
+    "ten",
+    "tend",
+    "tide",
+    "tie",
+    "tied",
+    "tin",
+    "tod",
+    "toe",
+    "ton",
+    "tone"
   ]
 }

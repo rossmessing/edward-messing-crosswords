@@ -2,85 +2,84 @@
   "id": "medium-008",
   "difficulty": "medium",
   "letters": [
-    "t",
-    "c",
-    "y",
+    "f",
+    "l",
     "e",
-    "o",
-    "r",
-    "g",
-    "a"
+    "i",
+    "x",
+    "b",
+    "l",
+    "e"
   ],
   "grid": {
-    "width": 11,
-    "height": 9
+    "width": 12,
+    "height": 6
   },
   "words": [
     {
-      "word": "category",
-      "row": 6,
-      "col": 1,
-      "dir": "across"
-    },
-    {
-      "word": "great",
+      "word": "flexible",
       "row": 3,
-      "col": 2,
-      "dir": "down"
-    },
-    {
-      "word": "year",
-      "row": 5,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "gear",
-      "row": 3,
-      "col": 7,
-      "dir": "down"
-    },
-    {
-      "word": "rate",
-      "row": 8,
-      "col": 4,
-      "dir": "across"
-    },
-    {
-      "word": "cart",
-      "row": 4,
       "col": 0,
       "dir": "across"
     },
     {
-      "word": "grey",
-      "row": 3,
-      "col": 7,
+      "word": "bell",
+      "row": 1,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "feel",
+      "row": 0,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "file",
+      "row": 2,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "fill",
+      "row": 0,
+      "col": 6,
       "dir": "across"
     },
     {
-      "word": "care",
+      "word": "life",
       "row": 0,
       "col": 9,
       "dir": "down"
     },
     {
-      "word": "gray",
-      "row": 1,
-      "col": 7,
+      "word": "fee",
+      "row": 5,
+      "col": 3,
       "dir": "across"
     },
     {
-      "word": "race",
+      "word": "fix",
       "row": 2,
-      "col": 0,
-      "dir": "down"
-    },
-    {
-      "word": "age",
-      "row": 4,
-      "col": 5,
+      "col": 9,
       "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "bee",
+    "beef",
+    "bel",
+    "belief",
+    "belle",
+    "bile",
+    "elf",
+    "elle",
+    "exile",
+    "fell",
+    "flee",
+    "flex",
+    "ill",
+    "lei",
+    "lie"
   ]
 }

@@ -2,85 +2,129 @@
   "id": "medium-005",
   "difficulty": "medium",
   "letters": [
-    "a",
-    "u",
-    "e",
-    "h",
     "s",
+    "o",
+    "i",
+    "d",
+    "t",
     "p",
-    "c",
-    "r"
+    "e"
   ],
   "grid": {
-    "width": 14,
-    "height": 13
+    "width": 12,
+    "height": 12
   },
   "words": [
     {
-      "word": "purchase",
-      "row": 7,
-      "col": 4,
+      "word": "deposit",
+      "row": 5,
+      "col": 5,
       "dir": "across"
     },
     {
-      "word": "search",
+      "word": "posted",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "diet",
       "row": 4,
-      "col": 6,
-      "dir": "down"
-    },
-    {
-      "word": "space",
-      "row": 6,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "sharp",
-      "row": 6,
-      "col": 8,
-      "dir": "down"
-    },
-    {
-      "word": "share",
-      "row": 7,
       "col": 10,
       "dir": "down"
     },
     {
-      "word": "super",
+      "word": "does",
       "row": 4,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "edit",
+      "row": 5,
       "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "post",
+      "row": 0,
+      "col": 5,
       "dir": "across"
     },
     {
-      "word": "cause",
-      "row": 10,
+      "word": "side",
+      "row": 2,
+      "col": 5,
+      "dir": "across"
+    },
+    {
+      "word": "site",
+      "row": 4,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "spot",
+      "row": 8,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "step",
+      "row": 4,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "stop",
+      "row": 8,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "die",
+      "row": 6,
       "col": 0,
       "dir": "across"
-    },
-    {
-      "word": "shape",
-      "row": 0,
-      "col": 9,
-      "dir": "down"
-    },
-    {
-      "word": "reach",
-      "row": 9,
-      "col": 8,
-      "dir": "across"
-    },
-    {
-      "word": "phase",
-      "row": 8,
-      "col": 1,
-      "dir": "down"
-    },
-    {
-      "word": "each",
-      "row": 11,
-      "col": 10,
-      "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "depot",
+    "dip",
+    "dis",
+    "doe",
+    "dope",
+    "dos",
+    "dose",
+    "dot",
+    "its",
+    "ode",
+    "opt",
+    "peso",
+    "pest",
+    "pet",
+    "pie",
+    "pit",
+    "pod",
+    "poet",
+    "poised",
+    "pose",
+    "pot",
+    "pst",
+    "sept",
+    "set",
+    "sip",
+    "sit",
+    "sod",
+    "spit",
+    "spite",
+    "tide",
+    "tie",
+    "tied",
+    "tip",
+    "tod",
+    "toe",
+    "top",
+    "tops"
   ]
 }

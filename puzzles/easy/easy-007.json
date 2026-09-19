@@ -2,65 +2,56 @@
   "id": "easy-007",
   "difficulty": "easy",
   "letters": [
-    "a",
-    "r",
-    "c",
-    "t",
+    "l",
     "o",
-    "f"
+    "d",
+    "s",
+    "i"
   ],
   "grid": {
-    "width": 10,
-    "height": 7
+    "width": 6,
+    "height": 6
   },
   "words": [
     {
-      "word": "factor",
-      "row": 3,
-      "col": 2,
-      "dir": "across"
-    },
-    {
-      "word": "cart",
+      "word": "solid",
       "row": 2,
-      "col": 3,
-      "dir": "down"
-    },
-    {
-      "word": "fort",
-      "row": 0,
-      "col": 5,
-      "dir": "down"
-    },
-    {
-      "word": "fact",
-      "row": 5,
-      "col": 0,
+      "col": 1,
       "dir": "across"
     },
     {
-      "word": "cat",
-      "row": 4,
+      "word": "soil",
+      "row": 2,
       "col": 1,
       "dir": "down"
     },
     {
-      "word": "art",
-      "row": 2,
-      "col": 7,
+      "word": "sold",
+      "row": 0,
+      "col": 3,
       "dir": "down"
     },
     {
-      "word": "act",
-      "row": 2,
-      "col": 7,
-      "dir": "across"
-    },
-    {
-      "word": "fat",
+      "word": "lid",
       "row": 0,
       "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "oil",
+      "row": 4,
+      "col": 0,
       "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "dis",
+    "dos",
+    "idol",
+    "lido",
+    "sil",
+    "slid",
+    "sod",
+    "sol"
   ]
 }

@@ -2,66 +2,75 @@
   "id": "medium-012",
   "difficulty": "medium",
   "letters": [
-    "h",
-    "n",
-    "i",
-    "u",
     "g",
-    "t",
-    "n"
+    "i",
+    "m",
+    "a",
+    "n",
+    "a",
+    "z"
   ],
   "grid": {
-    "width": 9,
-    "height": 8
+    "width": 8,
+    "height": 9
   },
   "words": [
     {
-      "word": "hunting",
-      "row": 3,
-      "col": 2,
+      "word": "amazing",
+      "row": 4,
+      "col": 1,
       "dir": "across"
     },
     {
-      "word": "thing",
-      "row": 2,
-      "col": 2,
+      "word": "again",
+      "row": 4,
+      "col": 1,
       "dir": "down"
     },
     {
-      "word": "night",
+      "word": "gain",
       "row": 3,
-      "col": 4,
+      "col": 3,
       "dir": "down"
     },
     {
-      "word": "unit",
-      "row": 0,
+      "word": "main",
+      "row": 2,
       "col": 5,
       "dir": "down"
     },
     {
-      "word": "hit",
-      "row": 2,
+      "word": "aim",
+      "row": 7,
       "col": 0,
       "dir": "across"
     },
     {
-      "word": "gun",
-      "row": 1,
+      "word": "man",
+      "row": 2,
+      "col": 5,
+      "dir": "across"
+    },
+    {
+      "word": "min",
+      "row": 0,
       "col": 7,
       "dir": "down"
-    },
-    {
-      "word": "gnu",
-      "row": 3,
-      "col": 8,
-      "dir": "down"
-    },
-    {
-      "word": "inn",
-      "row": 3,
-      "col": 6,
-      "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "aga",
+    "ama",
+    "gam",
+    "gan",
+    "gin",
+    "mag",
+    "mana",
+    "manga",
+    "mania",
+    "mig",
+    "ming",
+    "nag",
+    "nam"
   ]
 }

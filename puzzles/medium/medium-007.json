@@ -2,84 +2,112 @@
   "id": "medium-007",
   "difficulty": "medium",
   "letters": [
-    "s",
     "e",
-    "r",
-    "o",
-    "s",
-    "p",
-    "c"
+    "b",
+    "l",
+    "b",
+    "a",
+    "a",
+    "l",
+    "s"
   ],
   "grid": {
-    "width": 14,
-    "height": 7
+    "width": 11,
+    "height": 9
   },
   "words": [
     {
-      "word": "process",
-      "row": 2,
-      "col": 1,
+      "word": "baseball",
+      "row": 5,
+      "col": 3,
       "dir": "across"
     },
     {
-      "word": "cross",
-      "row": 1,
-      "col": 2,
+      "word": "label",
+      "row": 3,
+      "col": 3,
       "dir": "down"
     },
     {
-      "word": "press",
-      "row": 0,
-      "col": 5,
-      "dir": "down"
-    },
-    {
-      "word": "specs",
+      "word": "able",
       "row": 2,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "babe",
+      "row": 5,
       "col": 7,
       "dir": "down"
     },
     {
-      "word": "score",
-      "row": 5,
-      "col": 6,
-      "dir": "across"
-    },
-    {
-      "word": "scope",
-      "row": 1,
-      "col": 10,
+      "word": "ball",
+      "row": 3,
+      "col": 9,
       "dir": "down"
     },
     {
-      "word": "core",
-      "row": 2,
-      "col": 10,
-      "dir": "across"
-    },
-    {
-      "word": "rose",
-      "row": 4,
+      "word": "base",
+      "row": 6,
       "col": 0,
       "dir": "across"
     },
     {
-      "word": "per",
+      "word": "bell",
+      "row": 3,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "sale",
+      "row": 5,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "sell",
       "row": 0,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "all",
+      "row": 2,
+      "col": 6,
+      "dir": "across"
+    },
+    {
+      "word": "lab",
+      "row": 7,
       "col": 5,
       "dir": "across"
     },
     {
-      "word": "pro",
-      "row": 4,
-      "col": 10,
+      "word": "sea",
+      "row": 0,
+      "col": 4,
       "dir": "across"
-    },
-    {
-      "word": "sec",
-      "row": 1,
-      "col": 13,
-      "dir": "down"
     }
+  ],
+  "bonus_words": [
+    "aba",
+    "abb",
+    "abbas",
+    "aes",
+    "ala",
+    "alas",
+    "alba",
+    "ale",
+    "baba",
+    "bal",
+    "bas",
+    "basal",
+    "bel",
+    "els",
+    "sable",
+    "salle",
+    "seal",
+    "sla",
+    "slab"
   ]
 }

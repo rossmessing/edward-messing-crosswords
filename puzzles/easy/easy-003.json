@@ -2,65 +2,60 @@
   "id": "easy-003",
   "difficulty": "easy",
   "letters": [
-    "r",
-    "f",
-    "o",
-    "a",
+    "b",
     "l",
-    "m"
+    "l",
+    "a",
+    "g",
+    "o"
   ],
   "grid": {
-    "width": 10,
-    "height": 6
+    "width": 7,
+    "height": 4
   },
   "words": [
     {
-      "word": "formal",
+      "word": "global",
       "row": 2,
-      "col": 4,
-      "dir": "across"
-    },
-    {
-      "word": "form",
-      "row": 2,
-      "col": 4,
-      "dir": "down"
-    },
-    {
-      "word": "farm",
-      "row": 0,
-      "col": 6,
-      "dir": "down"
-    },
-    {
-      "word": "from",
-      "row": 5,
       "col": 1,
       "dir": "across"
     },
     {
-      "word": "oral",
+      "word": "ball",
       "row": 0,
-      "col": 8,
-      "dir": "down"
-    },
-    {
-      "word": "mar",
-      "row": 3,
       "col": 2,
       "dir": "down"
     },
     {
-      "word": "ram",
-      "row": 3,
-      "col": 0,
+      "word": "goal",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "ago",
+      "row": 0,
+      "col": 4,
       "dir": "across"
     },
     {
-      "word": "arm",
-      "row": 2,
+      "word": "lab",
+      "row": 0,
       "col": 0,
-      "dir": "down"
+      "dir": "across"
     }
+  ],
+  "bonus_words": [
+    "all",
+    "bag",
+    "bal",
+    "boa",
+    "bog",
+    "gal",
+    "gall",
+    "goa",
+    "lag",
+    "lob",
+    "log"
   ]
 }
