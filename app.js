@@ -153,33 +153,55 @@
 
   // Sizes the grid and wheel to fit whatever vertical space is actually
   // available, so Clear/Shuffle never get pushed off-screen and no tile
-  // in the wheel ever depends on scrolling to become reachable.
+  // in the wheel ever depends on scrolling to become reachable. The
+  // wheel always gets at least MIN_WHEEL, shrinking the grid's cell
+  // size (never the wheel) to make room on tall/dense grids - the
+  // wheel is the primary interactive element and must never overlap
+  // the controls below it.
   function computeLayout(puzzle) {
     const { width, height } = puzzle.grid;
     const vw = window.innerWidth;
     const vh = window.innerHeight;
+    const GRID_GAP = 4; // must match .grid's CSS gap
 
-    const topClearance = 64; // back button
-    const bottomControls = 180; // submit button + secondary controls row + gaps
-    const attemptHeight = 44;
+    const topClearance = 68; // back button
+    const bottomControls = 190; // submit button + secondary controls row + gaps
+    const attemptHeight = 48;
     const innerGaps = 32; // gaps between grid/attempt/wheel
-    const safetyMargin = 30;
+    const safetyMargin = 40;
     const availableHeight = Math.max(
       260,
       vh - topClearance - bottomControls - attemptHeight - innerGaps - safetyMargin
     );
 
+    // Caps are generous (much larger than a phone would ever need) so
+    // the game actually fills a big screen like an iPad instead of
+    // floating as a small card in a lot of empty space - the min()s
+    // against vw/availableHeight still shrink it down for small screens.
+    const MIN_WHEEL = 190;
+    const MAX_WHEEL = 560;
+    const MIN_CELL = 12;
+    const MAX_CELL = 60;
+
+    const widthBudget = Math.min(vw * 0.9, 640) - (width - 1) * GRID_GAP;
+    let cellSize = Math.max(
+      MIN_CELL,
+      Math.min(MAX_CELL, Math.floor(widthBudget / width))
+    );
+    let gridHeight = cellSize * height + (height - 1) * GRID_GAP;
+
+    if (availableHeight - gridHeight < MIN_WHEEL) {
+      const gridHeightBudget = availableHeight - MIN_WHEEL - (height - 1) * GRID_GAP;
+      cellSize = Math.max(MIN_CELL, Math.min(cellSize, Math.floor(gridHeightBudget / height)));
+      gridHeight = cellSize * height + (height - 1) * GRID_GAP;
+    }
+
     const wheelSize = Math.max(
-      200,
-      Math.min(340, vw * 0.78, availableHeight * 0.55)
+      MIN_WHEEL,
+      Math.min(MAX_WHEEL, vw * 0.78, availableHeight - gridHeight)
     );
 
-    const gridAvailableHeight = availableHeight - wheelSize;
-    const cellByWidth = Math.floor(Math.min(vw * 0.9, 380) / width);
-    const cellByHeight = Math.floor(gridAvailableHeight / height);
-    const cellSize = Math.max(16, Math.min(38, cellByWidth, cellByHeight));
-
-    const tileSize = Math.max(44, Math.min(68, wheelSize / 3.4));
+    const tileSize = Math.max(44, Math.min(100, wheelSize / 3.2));
 
     return { cellSize, wheelSize, tileSize };
   }
