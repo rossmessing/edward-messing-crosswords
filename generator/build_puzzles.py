@@ -22,13 +22,12 @@ WORDLIST_RAW_URL = (
     "https://raw.githubusercontent.com/first20hours/google-10000-english/"
     "master/google-10000-english-no-swears.txt"
 )
-BONUS_WORDLIST_RAW = HERE / "wordlist_bonus_raw.txt"
-BONUS_WORDLIST_RAW_URL = "https://norvig.com/ngrams/count_1w.txt"
 SYSTEM_DICT = Path("/usr/share/dict/web2")
 PROPER_NAMES = Path("/usr/share/dict/propernames")
 PUZZLES_DIR = HERE.parent / "puzzles"
 
 MIN_SUBWORD_LEN = 3
+MAX_SUBWORD_LEN = 8  # matches the longest root word length
 # Only take the N most frequent words from the raw list. This list is
 # a small, pre-curated "no-swears" common-words list (not a raw web
 # corpus), so a low cutoff is deliberate: going much higher starts
@@ -36,12 +35,6 @@ MIN_SUBWORD_LEN = 3
 # bigger corpus would otherwise catch on frequency alone but that
 # this list is too short to rank sensibly.
 FREQUENCY_RANK_CUTOFF = 4000
-# Cutoff for the bonus-word corpus (a much bigger real web-frequency
-# list). Bonus words are never drawn on screen, so a looser cutoff here
-# just means more of what a player types gets recognized, at the cost
-# of occasionally admitting an obscure or informal word as a silent,
-# unlisted "extra" - an acceptable trade since it's never shown.
-BONUS_FREQUENCY_RANK_CUTOFF = 25000
 
 DIFFICULTIES = {
     "easy": {
@@ -81,6 +74,11 @@ BLOCKLIST = {
     "soc", "soho", "tai", "tate", "tera", "til", "ting", "tho",
     "morocco", "incubus", "anorexia", "dyslexia", "weber", "bodied",
     "reflux", "cortical", "dont", "las", "tue",
+    # Genuinely offensive/violent terms rather than merely obscure or
+    # informal - excluded even from bonus words, which mild "risque"
+    # words are otherwise fine for.
+    "rape", "raper", "raped", "rapes", "raping", "slut", "sluts",
+    "nazim",
 }
 
 # The curated 4000-word list is clean but short, so it misses some very
@@ -150,13 +148,23 @@ def load_wordlist():
 
 
 def load_bonus_wordlist(grid_words):
-    """A much larger word set used only to recognize "bonus" words -
+    """The full system dictionary, used only to recognize "bonus" words -
     valid words a player can type that aren't drawn into the grid. Since
-    these never render on screen, coverage matters more than the extra
-    obscure/informal words a bigger corpus lets through, but they still
-    go through the same real-word/proper-noun/blocklist filter.
+    these never render on screen, there's no reason to cap them by
+    frequency at all (a cutoff just means real words like "terse" get
+    silently rejected for no visible reason) - any dictionary word
+    should work. Proper-noun and blocklist filtering still applies.
     """
-    words = _load_frequency_list(BONUS_WORDLIST_RAW, BONUS_FREQUENCY_RANK_CUTOFF)
+    if not SYSTEM_DICT.exists():
+        print(f"warning: {SYSTEM_DICT} not found, bonus words limited to grid words")
+        return set(grid_words)
+
+    words = set()
+    for line in SYSTEM_DICT.read_text(errors="ignore").splitlines():
+        w = line.strip().lower()
+        if w.isalpha() and MIN_SUBWORD_LEN <= len(w) <= MAX_SUBWORD_LEN:
+            words.add(w)
+
     words |= grid_words
     return _filter_real_words(words)
 
@@ -300,7 +308,6 @@ def make_puzzle(puzzle_id, difficulty, root, all_words, bonus_words_pool, rng):
 
 def main():
     _ensure_downloaded(WORDLIST_RAW, WORDLIST_RAW_URL)
-    _ensure_downloaded(BONUS_WORDLIST_RAW, BONUS_WORDLIST_RAW_URL)
 
     rng = random.Random(RNG_SEED)
     all_words = load_wordlist()

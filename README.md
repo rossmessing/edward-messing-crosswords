@@ -21,21 +21,24 @@ Works entirely in the browser from static files.
 
 ## Word sources
 
-Two word lists feed the generator, both auto-downloaded on first run:
+Two different sources feed the generator, for two different purposes:
 
-- A small curated ~4000-word common-words list — used for root words and
-  anything actually drawn into the grid, since that's always visible and
-  needs to be unambiguously ordinary.
-- A much larger real-world word-frequency list — used only to recognize
-  bonus words, since those are never shown on screen.
+- A small curated ~4000-word common-words list (auto-downloaded) — used
+  for root words and anything actually drawn into the grid, since that's
+  always visible and needs to be unambiguously ordinary.
+- The full system dictionary (`/usr/share/dict/web2`, present by default
+  on macOS) — used to recognize bonus words. Since bonus words are never
+  shown on screen, there's no reason to cap them by frequency; any real
+  dictionary word works, so almost anything a player reasonably types is
+  recognized.
 
-Both are filtered against the system dictionary (`/usr/share/dict/web2`,
-present by default on macOS) and `/usr/share/dict/propernames` to drop
-non-words and proper nouns, plus a small hand-maintained `BLOCKLIST` in
-`build_puzzles.py` for anything that slips through both (abbreviations,
-archaic/dialectal terms, or anything too heavy/clinical-themed for a
-casual game). If you spot a bad word in a generated puzzle, add it to
-`BLOCKLIST` and regenerate.
+Both are filtered against `/usr/share/dict/web2` and
+`/usr/share/dict/propernames` to drop non-words and proper nouns, plus a
+small hand-maintained `BLOCKLIST` in `build_puzzles.py` for anything that
+slips through both (abbreviations, archaic/dialectal terms, or genuinely
+offensive/violent terms - mildly informal or risqué words are otherwise
+left alone, since bonus words never render on screen). If you spot a bad
+word in a generated puzzle, add it to `BLOCKLIST` and regenerate.
 
 ## Regenerating puzzles
 
@@ -45,9 +48,8 @@ python3 build_puzzles.py
 ```
 
 Commit the regenerated files under `puzzles/` afterward. The raw
-downloaded wordlists (`generator/wordlist_raw.txt`,
-`generator/wordlist_bonus_raw.txt`) are gitignored — they're re-fetched
-automatically if missing.
+downloaded common-words list (`generator/wordlist_raw.txt`) is
+gitignored — it's re-fetched automatically if missing.
 
 ## Running locally
 
