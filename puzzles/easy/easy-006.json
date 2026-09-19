@@ -1,0 +1,66 @@
+{
+  "id": "easy-006",
+  "difficulty": "easy",
+  "letters": [
+    "r",
+    "e",
+    "m",
+    "d",
+    "n",
+    "o"
+  ],
+  "grid": {
+    "width": 9,
+    "height": 7
+  },
+  "words": [
+    {
+      "word": "modern",
+      "row": 3,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "done",
+      "row": 2,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "more",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "node",
+      "row": 3,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "mode",
+      "row": 5,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "don",
+      "row": 1,
+      "col": 4,
+      "dir": "across"
+    },
+    {
+      "word": "nor",
+      "row": 4,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "men",
+      "row": 6,
+      "col": 6,
+      "dir": "across"
+    }
+  ]
+}

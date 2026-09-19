@@ -1,0 +1,62 @@
+{
+  "id": "medium-001",
+  "difficulty": "medium",
+  "letters": [
+    "r",
+    "o",
+    "e",
+    "x",
+    "r",
+    "p",
+    "e",
+    "l"
+  ],
+  "grid": {
+    "width": 10,
+    "height": 8
+  },
+  "words": [
+    {
+      "word": "explorer",
+      "row": 1,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "explore",
+      "row": 1,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "peer",
+      "row": 1,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "role",
+      "row": 0,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "per",
+      "row": 0,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "pro",
+      "row": 5,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "lee",
+      "row": 7,
+      "col": 1,
+      "dir": "across"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "medium-003",
+  "difficulty": "medium",
+  "letters": [
+    "d",
+    "r",
+    "g",
+    "k",
+    "n",
+    "i",
+    "n",
+    "i"
+  ],
+  "grid": {
+    "width": 13,
+    "height": 8
+  },
+  "words": [
+    {
+      "word": "drinking",
+      "row": 2,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "dining",
+      "row": 2,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "drink",
+      "row": 0,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "king",
+      "row": 2,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "grid",
+      "row": 2,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "kind",
+      "row": 6,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "ring",
+      "row": 3,
+      "col": 9,
+      "dir": "across"
+    },
+    {
+      "word": "kid",
+      "row": 0,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "inn",
+      "row": 0,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "ink",
+      "row": 4,
+      "col": 0,
+      "dir": "down"
+    }
+  ]
+}

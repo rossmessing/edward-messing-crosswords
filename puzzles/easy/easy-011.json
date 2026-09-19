@@ -1,0 +1,48 @@
+{
+  "id": "easy-011",
+  "difficulty": "easy",
+  "letters": [
+    "i",
+    "g",
+    "n",
+    "a",
+    "r",
+    "c"
+  ],
+  "grid": {
+    "width": 7,
+    "height": 7
+  },
+  "words": [
+    {
+      "word": "racing",
+      "row": 3,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "rain",
+      "row": 3,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "gain",
+      "row": 1,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "ring",
+      "row": 0,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "air",
+      "row": 5,
+      "col": 0,
+      "dir": "across"
+    }
+  ]
+}

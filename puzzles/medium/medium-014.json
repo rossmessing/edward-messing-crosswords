@@ -1,0 +1,85 @@
+{
+  "id": "medium-014",
+  "difficulty": "medium",
+  "letters": [
+    "i",
+    "h",
+    "a",
+    "m",
+    "c",
+    "n",
+    "e"
+  ],
+  "grid": {
+    "width": 11,
+    "height": 12
+  },
+  "words": [
+    {
+      "word": "machine",
+      "row": 7,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "cinema",
+      "row": 3,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "chain",
+      "row": 7,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "china",
+      "row": 5,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "anime",
+      "row": 3,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "each",
+      "row": 3,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "inch",
+      "row": 5,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "mean",
+      "row": 11,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "name",
+      "row": 3,
+      "col": 7,
+      "dir": "across"
+    },
+    {
+      "word": "came",
+      "row": 0,
+      "col": 0,
+      "dir": "down"
+    },
+    {
+      "word": "nice",
+      "row": 0,
+      "col": 10,
+      "dir": "down"
+    }
+  ]
+}

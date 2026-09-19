@@ -1,0 +1,66 @@
+{
+  "id": "easy-002",
+  "difficulty": "easy",
+  "letters": [
+    "m",
+    "e",
+    "t",
+    "r",
+    "o",
+    "e"
+  ],
+  "grid": {
+    "width": 9,
+    "height": 8
+  },
+  "words": [
+    {
+      "word": "remote",
+      "row": 4,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "meter",
+      "row": 0,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "more",
+      "row": 4,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "meet",
+      "row": 1,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "tree",
+      "row": 1,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "term",
+      "row": 6,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "met",
+      "row": 1,
+      "col": 6,
+      "dir": "across"
+    },
+    {
+      "word": "tom",
+      "row": 1,
+      "col": 0,
+      "dir": "down"
+    }
+  ]
+}

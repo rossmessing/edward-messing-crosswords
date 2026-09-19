@@ -1,0 +1,67 @@
+{
+  "id": "medium-012",
+  "difficulty": "medium",
+  "letters": [
+    "h",
+    "n",
+    "i",
+    "u",
+    "g",
+    "t",
+    "n"
+  ],
+  "grid": {
+    "width": 9,
+    "height": 8
+  },
+  "words": [
+    {
+      "word": "hunting",
+      "row": 3,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "thing",
+      "row": 2,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "night",
+      "row": 3,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "unit",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "hit",
+      "row": 2,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "gun",
+      "row": 1,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "gnu",
+      "row": 3,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "inn",
+      "row": 3,
+      "col": 6,
+      "dir": "down"
+    }
+  ]
+}

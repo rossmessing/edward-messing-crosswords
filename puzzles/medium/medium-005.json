@@ -1,0 +1,86 @@
+{
+  "id": "medium-005",
+  "difficulty": "medium",
+  "letters": [
+    "a",
+    "u",
+    "e",
+    "h",
+    "s",
+    "p",
+    "c",
+    "r"
+  ],
+  "grid": {
+    "width": 14,
+    "height": 13
+  },
+  "words": [
+    {
+      "word": "purchase",
+      "row": 7,
+      "col": 4,
+      "dir": "across"
+    },
+    {
+      "word": "search",
+      "row": 4,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "space",
+      "row": 6,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "sharp",
+      "row": 6,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "share",
+      "row": 7,
+      "col": 10,
+      "dir": "down"
+    },
+    {
+      "word": "super",
+      "row": 4,
+      "col": 6,
+      "dir": "across"
+    },
+    {
+      "word": "cause",
+      "row": 10,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "shape",
+      "row": 0,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "reach",
+      "row": 9,
+      "col": 8,
+      "dir": "across"
+    },
+    {
+      "word": "phase",
+      "row": 8,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "each",
+      "row": 11,
+      "col": 10,
+      "dir": "across"
+    }
+  ]
+}

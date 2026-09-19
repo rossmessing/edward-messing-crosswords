@@ -1,0 +1,47 @@
+{
+  "id": "easy-009",
+  "difficulty": "easy",
+  "letters": [
+    "u",
+    "y",
+    "o",
+    "t",
+    "h"
+  ],
+  "grid": {
+    "width": 5,
+    "height": 6
+  },
+  "words": [
+    {
+      "word": "youth",
+      "row": 4,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "hot",
+      "row": 3,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "out",
+      "row": 2,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "you",
+      "row": 2,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "toy",
+      "row": 0,
+      "col": 2,
+      "dir": "down"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "medium-010",
+  "difficulty": "medium",
+  "letters": [
+    "t",
+    "n",
+    "t",
+    "i",
+    "p",
+    "a",
+    "e"
+  ],
+  "grid": {
+    "width": 10,
+    "height": 12
+  },
+  "words": [
+    {
+      "word": "patient",
+      "row": 4,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "patent",
+      "row": 4,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "paint",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "anti",
+      "row": 3,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "tape",
+      "row": 6,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "pain",
+      "row": 8,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "ten",
+      "row": 9,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "pet",
+      "row": 0,
+      "col": 5,
+      "dir": "across"
+    },
+    {
+      "word": "pan",
+      "row": 8,
+      "col": 0,
+      "dir": "down"
+    },
+    {
+      "word": "tea",
+      "row": 5,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "net",
+      "row": 9,
+      "col": 5,
+      "dir": "down"
+    }
+  ]
+}

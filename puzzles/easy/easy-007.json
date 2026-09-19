@@ -1,0 +1,66 @@
+{
+  "id": "easy-007",
+  "difficulty": "easy",
+  "letters": [
+    "a",
+    "r",
+    "c",
+    "t",
+    "o",
+    "f"
+  ],
+  "grid": {
+    "width": 10,
+    "height": 7
+  },
+  "words": [
+    {
+      "word": "factor",
+      "row": 3,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "cart",
+      "row": 2,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "fort",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "fact",
+      "row": 5,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "cat",
+      "row": 4,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "art",
+      "row": 2,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "act",
+      "row": 2,
+      "col": 7,
+      "dir": "across"
+    },
+    {
+      "word": "fat",
+      "row": 0,
+      "col": 5,
+      "dir": "across"
+    }
+  ]
+}

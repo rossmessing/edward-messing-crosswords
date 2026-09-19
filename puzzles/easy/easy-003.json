@@ -1,0 +1,66 @@
+{
+  "id": "easy-003",
+  "difficulty": "easy",
+  "letters": [
+    "r",
+    "f",
+    "o",
+    "a",
+    "l",
+    "m"
+  ],
+  "grid": {
+    "width": 10,
+    "height": 6
+  },
+  "words": [
+    {
+      "word": "formal",
+      "row": 2,
+      "col": 4,
+      "dir": "across"
+    },
+    {
+      "word": "form",
+      "row": 2,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "farm",
+      "row": 0,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "from",
+      "row": 5,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "oral",
+      "row": 0,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "mar",
+      "row": 3,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "ram",
+      "row": 3,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "arm",
+      "row": 2,
+      "col": 0,
+      "dir": "down"
+    }
+  ]
+}

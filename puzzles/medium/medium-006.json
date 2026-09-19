@@ -1,0 +1,86 @@
+{
+  "id": "medium-006",
+  "difficulty": "medium",
+  "letters": [
+    "o",
+    "n",
+    "e",
+    "i",
+    "c",
+    "b",
+    "g",
+    "m"
+  ],
+  "grid": {
+    "width": 11,
+    "height": 14
+  },
+  "words": [
+    {
+      "word": "becoming",
+      "row": 8,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "income",
+      "row": 3,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "coming",
+      "row": 8,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "begin",
+      "row": 8,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "being",
+      "row": 6,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "nice",
+      "row": 3,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "icon",
+      "row": 5,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "gone",
+      "row": 8,
+      "col": 10,
+      "dir": "down"
+    },
+    {
+      "word": "once",
+      "row": 9,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "mine",
+      "row": 0,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "come",
+      "row": 8,
+      "col": 0,
+      "dir": "down"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Word Puzzles</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main id="screen-home" class="screen">
+  <h1>Word Puzzles</h1>
+  <div class="menu-buttons">
+    <button id="btn-easy" class="menu-btn">
+      Easy
+      <span class="menu-sub" id="easy-progress"></span>
+    </button>
+    <button id="btn-medium" class="menu-btn">
+      Medium
+      <span class="menu-sub" id="medium-progress"></span>
+    </button>
+  </div>
+</main>
+
+<main id="screen-game" class="screen" hidden>
+  <button id="btn-back" class="icon-btn" aria-label="Back to menu">&#8592;</button>
+
+  <div id="play-area" class="play-area">
+    <div id="grid" class="grid"></div>
+
+    <div id="attempt-display" class="attempt-display" aria-live="polite"></div>
+
+    <div id="wheel" class="wheel"></div>
+  </div>
+
+  <div class="game-controls">
+    <button id="btn-clear" class="control-btn">Clear</button>
+    <button id="btn-shuffle" class="control-btn">Shuffle</button>
+  </div>
+</main>
+
+<div id="overlay-complete" class="overlay" hidden>
+  <div class="overlay-card">
+    <p class="overlay-message">Nice work!<br>You found all the words.</p>
+    <button id="btn-next" class="menu-btn">Next Puzzle</button>
+    <button id="btn-menu" class="control-btn">Back to Menu</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

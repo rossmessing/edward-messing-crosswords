@@ -1,0 +1,86 @@
+{
+  "id": "medium-009",
+  "difficulty": "medium",
+  "letters": [
+    "e",
+    "a",
+    "i",
+    "t",
+    "s",
+    "m",
+    "t",
+    "e"
+  ],
+  "grid": {
+    "width": 12,
+    "height": 12
+  },
+  "words": [
+    {
+      "word": "estimate",
+      "row": 3,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "estate",
+      "row": 3,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "state",
+      "row": 2,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "times",
+      "row": 1,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "team",
+      "row": 3,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "seem",
+      "row": 8,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "same",
+      "row": 0,
+      "col": 10,
+      "dir": "down"
+    },
+    {
+      "word": "seat",
+      "row": 5,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "site",
+      "row": 8,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "item",
+      "row": 3,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "test",
+      "row": 0,
+      "col": 8,
+      "dir": "across"
+    }
+  ]
+}

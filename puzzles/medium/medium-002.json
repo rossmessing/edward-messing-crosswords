@@ -1,0 +1,68 @@
+{
+  "id": "medium-002",
+  "difficulty": "medium",
+  "letters": [
+    "n",
+    "i",
+    "t",
+    "t",
+    "i",
+    "d",
+    "y",
+    "e"
+  ],
+  "grid": {
+    "width": 10,
+    "height": 5
+  },
+  "words": [
+    {
+      "word": "identity",
+      "row": 2,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "edit",
+      "row": 0,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "diet",
+      "row": 0,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "ten",
+      "row": 2,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "net",
+      "row": 0,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "die",
+      "row": 0,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "yet",
+      "row": 2,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "end",
+      "row": 4,
+      "col": 5,
+      "dir": "across"
+    }
+  ]
+}

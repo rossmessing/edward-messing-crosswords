@@ -1,0 +1,85 @@
+{
+  "id": "medium-007",
+  "difficulty": "medium",
+  "letters": [
+    "s",
+    "e",
+    "r",
+    "o",
+    "s",
+    "p",
+    "c"
+  ],
+  "grid": {
+    "width": 14,
+    "height": 7
+  },
+  "words": [
+    {
+      "word": "process",
+      "row": 2,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "cross",
+      "row": 1,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "press",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "specs",
+      "row": 2,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "score",
+      "row": 5,
+      "col": 6,
+      "dir": "across"
+    },
+    {
+      "word": "scope",
+      "row": 1,
+      "col": 10,
+      "dir": "down"
+    },
+    {
+      "word": "core",
+      "row": 2,
+      "col": 10,
+      "dir": "across"
+    },
+    {
+      "word": "rose",
+      "row": 4,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "per",
+      "row": 0,
+      "col": 5,
+      "dir": "across"
+    },
+    {
+      "word": "pro",
+      "row": 4,
+      "col": 10,
+      "dir": "across"
+    },
+    {
+      "word": "sec",
+      "row": 1,
+      "col": 13,
+      "dir": "down"
+    }
+  ]
+}

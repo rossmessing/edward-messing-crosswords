@@ -1,0 +1,85 @@
+{
+  "id": "medium-011",
+  "difficulty": "medium",
+  "letters": [
+    "m",
+    "m",
+    "t",
+    "o",
+    "e",
+    "c",
+    "n"
+  ],
+  "grid": {
+    "width": 12,
+    "height": 9
+  },
+  "words": [
+    {
+      "word": "comment",
+      "row": 2,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "moment",
+      "row": 1,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "cent",
+      "row": 1,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "once",
+      "row": 4,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "note",
+      "row": 0,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "come",
+      "row": 3,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "ten",
+      "row": 6,
+      "col": 4,
+      "dir": "across"
+    },
+    {
+      "word": "not",
+      "row": 0,
+      "col": 9,
+      "dir": "across"
+    },
+    {
+      "word": "met",
+      "row": 6,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "men",
+      "row": 6,
+      "col": 0,
+      "dir": "down"
+    },
+    {
+      "word": "tom",
+      "row": 0,
+      "col": 11,
+      "dir": "down"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "easy-013",
+  "difficulty": "easy",
+  "letters": [
+    "g",
+    "s",
+    "i",
+    "a",
+    "l",
+    "n"
+  ],
+  "grid": {
+    "width": 6,
+    "height": 8
+  },
+  "words": [
+    {
+      "word": "signal",
+      "row": 5,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "gain",
+      "row": 3,
+      "col": 1,
+      "dir": "down"
+    },
+    {
+      "word": "sign",
+      "row": 2,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "san",
+      "row": 2,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "sin",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "gas",
+      "row": 0,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "las",
+      "row": 5,
+      "col": 5,
+      "dir": "down"
+    }
+  ]
+}

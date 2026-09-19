@@ -1,0 +1,294 @@
+:root {
+  --bg: #faf5ee;
+  --ink: #3a332c;
+  --ink-soft: #7a7168;
+  --accent: #c9683f;
+  --accent-ink: #ffffff;
+  --tile-bg: #ffffff;
+  --tile-border: #e3d9c9;
+  --tile-filled-bg: #f1e4d3;
+  --wheel-bg: #eee1cd;
+  --wheel-border: #d9c4a3;
+  --success: #6f9a63;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  overflow: hidden;
+}
+
+.screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* ---------- Home screen ---------- */
+
+#screen-home {
+  justify-content: center;
+  gap: 48px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ink);
+  text-align: center;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.menu-btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border: none;
+  border-radius: 20px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.menu-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.menu-sub {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* ---------- Game screen ---------- */
+
+#screen-game {
+  height: 100vh;
+  height: 100dvh;
+  gap: 12px;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.play-area {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 64px;
+}
+
+.icon-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: var(--tile-bg);
+  color: var(--ink);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.grid {
+  display: grid;
+  gap: 4px;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cell {
+  width: var(--cell-size, 38px);
+  height: var(--cell-size, 38px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--cell-size, 38px) * 0.5);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+
+.cell.empty {
+  background: transparent;
+}
+
+.cell.blank {
+  background: var(--tile-bg);
+  border: 2px solid var(--tile-border);
+}
+
+.cell.filled {
+  background: var(--tile-filled-bg);
+  border: 2px solid var(--accent);
+  color: var(--ink);
+}
+
+.attempt-display {
+  min-height: 2.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent);
+}
+
+.wheel {
+  position: relative;
+  width: var(--wheel-size, min(78vw, 340px));
+  height: var(--wheel-size, min(78vw, 340px));
+  flex-shrink: 0;
+}
+
+.tile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--tile-size, 68px);
+  height: var(--tile-size, 68px);
+  margin: calc(var(--tile-size, 68px) / -2) 0 0 calc(var(--tile-size, 68px) / -2);
+  border-radius: 50%;
+  background: var(--wheel-bg);
+  border: 2px solid var(--wheel-border);
+  color: var(--ink);
+  font-size: calc(var(--tile-size, 68px) * 0.25);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile:active {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.tile.used {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.game-controls {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 8px;
+}
+
+.control-btn {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--ink);
+  background: var(--tile-bg);
+  border: 2px solid var(--tile-border);
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.control-btn:active {
+  background: var(--tile-filled-bg);
+}
+
+/* ---------- Complete overlay ---------- */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(58, 51, 44, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.overlay-card {
+  background: var(--bg);
+  border-radius: 24px;
+  padding: 40px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 380px;
+  width: 100%;
+}
+
+.overlay-message {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  color: var(--success);
+}
+
+.overlay-card .menu-btn,
+.overlay-card .control-btn {
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #2a2622;
+    --ink: #f2ece2;
+    --ink-soft: #b8ada0;
+    --accent: #e08a5c;
+    --accent-ink: #2a2622;
+    --tile-bg: #37322b;
+    --tile-border: #4a4238;
+    --tile-filled-bg: #46392c;
+    --wheel-bg: #3d362c;
+    --wheel-border: #574c3c;
+    --success: #8fbf7f;
+  }
+}

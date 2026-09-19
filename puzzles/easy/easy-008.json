@@ -1,0 +1,66 @@
+{
+  "id": "easy-008",
+  "difficulty": "easy",
+  "letters": [
+    "c",
+    "m",
+    "a",
+    "a",
+    "e",
+    "r"
+  ],
+  "grid": {
+    "width": 9,
+    "height": 7
+  },
+  "words": [
+    {
+      "word": "camera",
+      "row": 2,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "cream",
+      "row": 2,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "came",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "area",
+      "row": 1,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "care",
+      "row": 4,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "race",
+      "row": 0,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "mar",
+      "row": 6,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "ram",
+      "row": 4,
+      "col": 6,
+      "dir": "across"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "easy-012",
+  "difficulty": "easy",
+  "letters": [
+    "h",
+    "a",
+    "p",
+    "s",
+    "e"
+  ],
+  "grid": {
+    "width": 7,
+    "height": 5
+  },
+  "words": [
+    {
+      "word": "shape",
+      "row": 3,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "phase",
+      "row": 0,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "spa",
+      "row": 1,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "sea",
+      "row": 2,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "she",
+      "row": 4,
+      "col": 0,
+      "dir": "across"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "easy-014",
+  "difficulty": "easy",
+  "letters": [
+    "m",
+    "d",
+    "h",
+    "o",
+    "t",
+    "e"
+  ],
+  "grid": {
+    "width": 8,
+    "height": 8
+  },
+  "words": [
+    {
+      "word": "method",
+      "row": 4,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "home",
+      "row": 2,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "mode",
+      "row": 3,
+      "col": 6,
+      "dir": "down"
+    },
+    {
+      "word": "them",
+      "row": 4,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "hot",
+      "row": 2,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "met",
+      "row": 0,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "tom",
+      "row": 7,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "the",
+      "row": 5,
+      "col": 0,
+      "dir": "across"
+    }
+  ]
+}

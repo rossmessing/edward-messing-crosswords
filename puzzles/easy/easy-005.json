@@ -1,0 +1,66 @@
+{
+  "id": "easy-005",
+  "difficulty": "easy",
+  "letters": [
+    "e",
+    "t",
+    "n",
+    "s",
+    "e",
+    "a"
+  ],
+  "grid": {
+    "width": 9,
+    "height": 8
+  },
+  "words": [
+    {
+      "word": "senate",
+      "row": 4,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "teens",
+      "row": 0,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "seen",
+      "row": 1,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "seat",
+      "row": 1,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "teen",
+      "row": 3,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "east",
+      "row": 4,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "sent",
+      "row": 0,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "ten",
+      "row": 3,
+      "col": 0,
+      "dir": "down"
+    }
+  ]
+}

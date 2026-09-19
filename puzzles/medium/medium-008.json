@@ -1,0 +1,86 @@
+{
+  "id": "medium-008",
+  "difficulty": "medium",
+  "letters": [
+    "t",
+    "c",
+    "y",
+    "e",
+    "o",
+    "r",
+    "g",
+    "a"
+  ],
+  "grid": {
+    "width": 11,
+    "height": 9
+  },
+  "words": [
+    {
+      "word": "category",
+      "row": 6,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "great",
+      "row": 3,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "year",
+      "row": 5,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "gear",
+      "row": 3,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "rate",
+      "row": 8,
+      "col": 4,
+      "dir": "across"
+    },
+    {
+      "word": "cart",
+      "row": 4,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "grey",
+      "row": 3,
+      "col": 7,
+      "dir": "across"
+    },
+    {
+      "word": "care",
+      "row": 0,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "gray",
+      "row": 1,
+      "col": 7,
+      "dir": "across"
+    },
+    {
+      "word": "race",
+      "row": 2,
+      "col": 0,
+      "dir": "down"
+    },
+    {
+      "word": "age",
+      "row": 4,
+      "col": 5,
+      "dir": "across"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "medium-004",
+  "difficulty": "medium",
+  "letters": [
+    "r",
+    "o",
+    "a",
+    "m",
+    "e",
+    "n",
+    "c"
+  ],
+  "grid": {
+    "width": 12,
+    "height": 9
+  },
+  "words": [
+    {
+      "word": "romance",
+      "row": 4,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "ocean",
+      "row": 4,
+      "col": 4,
+      "dir": "down"
+    },
+    {
+      "word": "cream",
+      "row": 0,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "earn",
+      "row": 1,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "mean",
+      "row": 3,
+      "col": 9,
+      "dir": "down"
+    },
+    {
+      "word": "near",
+      "row": 1,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "more",
+      "row": 6,
+      "col": 1,
+      "dir": "across"
+    },
+    {
+      "word": "name",
+      "row": 8,
+      "col": 4,
+      "dir": "across"
+    },
+    {
+      "word": "came",
+      "row": 2,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "once",
+      "row": 6,
+      "col": 8,
+      "dir": "across"
+    },
+    {
+      "word": "core",
+      "row": 5,
+      "col": 2,
+      "dir": "down"
+    }
+  ]
+}

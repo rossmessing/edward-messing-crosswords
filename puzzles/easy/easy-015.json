@@ -1,0 +1,54 @@
+{
+  "id": "easy-015",
+  "difficulty": "easy",
+  "letters": [
+    "n",
+    "g",
+    "i",
+    "e",
+    "e",
+    "s"
+  ],
+  "grid": {
+    "width": 8,
+    "height": 7
+  },
+  "words": [
+    {
+      "word": "seeing",
+      "row": 3,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "seen",
+      "row": 3,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "sign",
+      "row": 2,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "gene",
+      "row": 0,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "sin",
+      "row": 6,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "see",
+      "row": 4,
+      "col": 0,
+      "dir": "across"
+    }
+  ]
+}

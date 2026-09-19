@@ -1,0 +1,60 @@
+{
+  "id": "easy-001",
+  "difficulty": "easy",
+  "letters": [
+    "o",
+    "t",
+    "g",
+    "u",
+    "h",
+    "b"
+  ],
+  "grid": {
+    "width": 10,
+    "height": 7
+  },
+  "words": [
+    {
+      "word": "bought",
+      "row": 2,
+      "col": 2,
+      "dir": "across"
+    },
+    {
+      "word": "both",
+      "row": 2,
+      "col": 2,
+      "dir": "down"
+    },
+    {
+      "word": "got",
+      "row": 2,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "hot",
+      "row": 0,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "but",
+      "row": 4,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "out",
+      "row": 1,
+      "col": 7,
+      "dir": "across"
+    },
+    {
+      "word": "bug",
+      "row": 4,
+      "col": 0,
+      "dir": "down"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "easy-004",
+  "difficulty": "easy",
+  "letters": [
+    "i",
+    "e",
+    "r",
+    "t",
+    "l",
+    "f"
+  ],
+  "grid": {
+    "width": 9,
+    "height": 6
+  },
+  "words": [
+    {
+      "word": "filter",
+      "row": 3,
+      "col": 3,
+      "dir": "across"
+    },
+    {
+      "word": "left",
+      "row": 1,
+      "col": 3,
+      "dir": "down"
+    },
+    {
+      "word": "fire",
+      "row": 0,
+      "col": 7,
+      "dir": "down"
+    },
+    {
+      "word": "felt",
+      "row": 1,
+      "col": 5,
+      "dir": "down"
+    },
+    {
+      "word": "file",
+      "row": 2,
+      "col": 0,
+      "dir": "across"
+    },
+    {
+      "word": "life",
+      "row": 0,
+      "col": 0,
+      "dir": "down"
+    },
+    {
+      "word": "ref",
+      "row": 3,
+      "col": 8,
+      "dir": "down"
+    },
+    {
+      "word": "let",
+      "row": 4,
+      "col": 1,
+      "dir": "across"
+    }
+  ]
+}
